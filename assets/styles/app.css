@@ -1,3 +1,208 @@
+/*
+    prim-color: #00561B
+    sec-color: 
+    text-color: white
+    banner-color: #00008B #4682B4
+    white:hover: rgb(207, 199, 199)
+*/
+
 body {
-    background-color: skyblue;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
+
+/* partie au dessus du header */
+#sub-header
+{
+    background: linear-gradient(40deg, #4682B4, #00561B);
+    color: white;
+}
+
+.sub-header-contact
+{
+    padding: 5px;
+    border-left: 1px solid white;
+}
+
+.sub-header-contact:first-child
+{
+    border: none;
+}
+
+.sub-header-link
+{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-header-social-icon
+{
+    padding: 2px;
+}
+
+/* header */
+
+/* languages icones */
+.langue-icone
+{
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+}
+
+/* bannière de l'accueil */
+#index-header-banner
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    background-position: center;
+    background-color: #4682B4;
+}
+
+.index-header-banner-txt-padding
+{
+    padding: 15px;
+}
+
+#agency-carousel
+{
+    margin: 50px 0 20px 0;
+}
+
+#help-you
+{
+    background: linear-gradient(60deg, #4682B4, #00561B);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.help-you-txt
+{
+    margin-top: 40px;
+    padding: 20px 0 20px 120px;
+}
+
+.help-you-img-col
+{
+    padding: 20px 120px 20px 0;
+}
+
+.img-help-you
+{
+    width: 400px;
+    height: 400px;
+}
+
+#reasons
+{
+    margin-bottom: 20px;
+}
+
+#reviews
+{
+    margin-bottom: 20px;
+}
+
+#how-it-works-banner
+{
+    background: linear-gradient(60deg, #4682B4, #00561B);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer
+{
+    padding: 10px;
+    border-top: 1px solid #00561B;
+}
+
+/* other */
+.border-prim
+{
+    border: 1px solid #00561B;
+    border-radius: 30px;
+    color: white;
+    background-color: #00561B;
+}
+
+.border-prim-rounded
+{
+    border: 1px solid #00561B;
+    border-radius: 30px;
+    color: white;
+    background-color: #00561B;
+}
+
+.border-prim-rounded-outline
+{
+    border: 1px solid #00561B;
+    border-radius: 30px;
+    color: white;
+    padding: 5px;
+    background-color: none;
+}
+
+.radius-circled
+{
+    border-radius: 60px;
+}
+
+.text-shadow
+{
+    text-shadow: 1px 1px 2px black;
+}
+
+.link-underscored-white
+{
+    color: white;
+}
+
+.link-underscored-white:hover
+{
+    color: rgb(207, 199, 199);
+}
+
+/* btn */
+
+.btn-prim
+{
+    border: 1px solid #00561B;
+    color: white;
+    background-color: #00561B;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.btn-prim-rounded
+{
+    border: 1px solid #00561B;
+    border-radius: 30px;
+    color: white;
+    background-color: #00561B;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.btn-sec
+{
+    border: 1px solid #4682B4;
+    color: white;
+    background-color: #4682B4;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.btn-sec-rounded
+{
+    border: 1px solid #4682B4;
+    border-radius: 30px;
+    color: white;
+    background-color: #4682B4;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+
