@@ -4,40 +4,40 @@
 
 {% block body %}
 <!-- welcome banner -->
-{% include('main/index-header-banner.html.twig') %}
+{% include('_includes/index-header-banner.html.twig') %}
 <main class="container-fluid">
     <!-- carousel agence -->
     <div class="row" id="agency-carousel">
         <div class="owl-carousel owl-theme text-center">
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/orpi.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/capcime.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/nexity.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/brimm.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/pdl.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/ysis.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
             <div>
-                <img src="{{asset('assets/img/logo.png')}}" alt="" class="img-fluid" width="140" height="140">
+                <img src="{{asset('assets/img/foncia.jpg')}}" alt="" class="img-fluid" width="140" height="140">
             </div>
         </div>
     </div>
 
     <!-- i'm here for you -->
     <div class="row" id="help-you">
-        <div class="col-6 help-you-txt">
+        <div class="col-12 col-md-6">
             <h1>
-                Je vous aides à trouver <br> le logement <br> qui vous convient
+                Je vous aides à trouver <br> le logement qui vous convient
             </h1>
 
             <p>
@@ -53,8 +53,8 @@
                 <a href="#" class="btn-prim">DITES-MOI TOUT <i class="bi bi-arrow-right"></i></a>
             </h5>
         </div>
-
-        <div class="col-6 text-end help-you-img-col">
+        
+        <div class="col-12 col-md-6 text-center text-md-end">
             <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="img-help-you img-fluid">
         </div>
     </div>
@@ -165,7 +165,7 @@
             </div>
 
             <div class="text-end">
-                <a href="#" title="" class="btn-prim">TOUS LES AVIS AVIS <i class="bi bi-arrow-right"></i></a>
+                <a href="#" title="" class="btn-prim">TOUS LES AVIS <i class="bi bi-arrow-right"></i></a>
                 <a href="#" title="" class="btn-sec">LAISSER UN AVIS <i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
@@ -174,26 +174,26 @@
     <!-- how it works -->
     <div class="row text-center" id="how-it-works-banner">
         <h1>Votre recherche de logement simplifiée</h1>
-        <div class="col-3">
-            <h3>Lorem ipsum dolor</h3>
+        <div class="col-6 col-md-3">
+            <h5>Lorem ipsum dolor</h5>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum perspiciatis ea nisi deleniti repudiandae modi reprehenderit deserunt, laborum consequatur quae! Eos reiciendis facere deleniti quasi, ea voluptatem tenetur laudantium.
             </p>
         </div>
-        <div class="col-3">
-            <h3>Lorem ipsum dolor</h3>
+        <div class="col-6 col-md-3">
+            <h5>Lorem ipsum dolor</h5>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum perspiciatis ea nisi deleniti repudiandae modi reprehenderit deserunt, laborum consequatur quae! Eos reiciendis facere deleniti quasi, ea voluptatem tenetur laudantium.
             </p>
         </div>
-        <div class="col-3">
-            <h3>Lorem ipsum dolor</h3>
+        <div class="col-6 col-md-3">
+            <h5>Lorem ipsum dolor</h5>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum perspiciatis ea nisi deleniti repudiandae modi reprehenderit deserunt, laborum consequatur quae! Eos reiciendis facere deleniti quasi, ea voluptatem tenetur laudantium.
             </p>
         </div>
-        <div class="col-3">
-            <h3>Lorem ipsum dolor</h3>
+        <div class="col-6 col-md-3">
+            <h5>Lorem ipsum dolor</h5>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum perspiciatis ea nisi deleniti repudiandae modi reprehenderit deserunt, laborum consequatur quae! Eos reiciendis facere deleniti quasi, ea voluptatem tenetur laudantium.
             </p>

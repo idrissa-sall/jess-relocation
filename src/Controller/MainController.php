@@ -12,7 +12,25 @@ class MainController extends AbstractController
     public function index(): Response
     {
         return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
+            
+        ]);
+    }
+
+
+    #[Route('/about', name: 'app_about')]
+    public function about(): Response
+    {
+        return $this->render('main/about.html.twig', [
+
+        ]);
+    }
+
+
+    #[Route('/contact', name: 'app_contact')]
+    function contact(): Response
+    {
+        return $this->render('main/contact.html.twig', [
+
         ]);
     }
 }

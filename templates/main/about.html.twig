@@ -1,0 +1,58 @@
+{% extends('base.html.twig') %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+
+<section class="page-header-banner" style="background-image: url({{asset("assets/img/vue-lyon-about.jpg")}})">
+</section>
+<main class="container-fluid">
+    <section class="container">
+        <!-- presentation -->
+        <div class="row">
+            <div class="col-12 col-md-6 order-2 order-md-1 d-flex align-self-center">
+                <div>
+                    <h1>Prénom nom</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error officia quaerat delectus!
+                        Impedit fugit iste consequatur eum odio. Culpa provident nemo fugit, ipsam quaerat unde pariatur
+                        obcaecati a ratione?
+                        Dolor assumenda temporibus, officiis quia eligendi illum harum sapiente commodi, asperiores illo
+                        quidem, distinctio iusto aut at possimus rem quas doloremque! Minima laboriosam eius beatae sapiente
+                        ipsa, fuga quis autem.
+                    </p>
+
+                    <div>
+                        <a href="#" title="" class="about-icone-link"><i class="bi bi-facebook about-icone" style="color: #3b5998 "></i></a>
+                        <a href="#" title="" class="about-icone-link"><i class="bi bi-instagram about-icone" style="color: orangered"></i></a>
+                        <a href="#" title="" class="about-icone-link"><i class="bi bi-tiktok about-icone" style="color: black"></i></a>
+                        <a href="#" title="" class="about-icone-link"><i class="bi bi-linkedin about-icone" style="color: #0e76a8"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center" style="background-color: #0c1431;">
+                <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="about-profil-img img-fluid">
+            </div>
+        </div>
+
+        <!-- parcours -->
+        <section class="row">
+            <div class="col-12">
+                <h1 class="text-center">Qui suis-je ?</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi repudiandae tenetur necessitatibus natus fugiat blanditiis, assumenda tempore dolore corrupti, iusto nulla excepturi quae nihil soluta asperiores perferendis delectus ex.
+                </p>
+
+                <ul>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</main>
+{% endblock %}

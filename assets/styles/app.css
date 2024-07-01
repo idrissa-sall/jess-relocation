@@ -1,20 +1,21 @@
 /*
     prim-color: #00561B
-    sec-color: 
-    text-color: white
-    banner-color: #00008B #4682B4
+    sec-color: #0c1431
+    text-color: #323D53
+    banner-text-color: white
+    banner-color: #0c1431
     white:hover: rgb(207, 199, 199)
 */
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: whitesmoke;
+    color: #323D53;
 }
 
 /* partie au dessus du header */
 #sub-header
 {
-    background: linear-gradient(40deg, #4682B4, #00561B);
+    background: linear-gradient(40deg, #0c1431, #00561B);
     color: white;
 }
 
@@ -55,14 +56,30 @@ body {
 {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55vh;
+    height: 65vh;
     background-position: center;
-    background-color: #4682B4;
+    background-color: #0c1431;
+    color: white;
 }
 
 .index-header-banner-txt-padding
 {
-    padding: 15px;
+    padding: 10px;
+}
+
+.index-header-title-text
+{
+    margin-top: 10px;
+}
+
+.index-header-p-right-text
+{
+    margin-top: 40px;
+}
+
+.index-header-p-e-text
+{
+    margin-top: 40px;
 }
 
 #agency-carousel
@@ -72,26 +89,16 @@ body {
 
 #help-you
 {
-    background: linear-gradient(60deg, #4682B4, #00561B);
+    background-color: #0c1431;
     color: white;
     margin-bottom: 20px;
-}
-
-.help-you-txt
-{
-    margin-top: 40px;
-    padding: 20px 0 20px 120px;
-}
-
-.help-you-img-col
-{
-    padding: 20px 120px 20px 0;
+    padding: 50px;
 }
 
 .img-help-you
 {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 
 #reasons
@@ -106,16 +113,59 @@ body {
 
 #how-it-works-banner
 {
-    background: linear-gradient(60deg, #4682B4, #00561B);
+    background-color: #0c1431;
     color: white;
-    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+}
+
+/* about */
+.about-profil-img
+{
+    width: 350px;
+    height: 350px;
+    transform: rotate(350deg);
+    padding: 30px;
+    border-radius: 60%;
+}
+
+.about-icone-link
+{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/* contact */
+.page-header-banner
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    background-position: center;
+    background-color: #0c1431;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-icone-link
+{
+    text-decoration: none;
+    color: #323D53;
+    font-size: 20px;
+}
+
+.contact-icone
+{
+    font-size: 20px;
 }
 
 /* footer */
 footer
 {
     padding: 10px;
-    border-top: 1px solid #00561B;
+    border-top: 1px solid white;
+    background-color: #0c1431;
+    color: white;
 }
 
 /* other */
@@ -139,7 +189,7 @@ footer
 {
     border: 1px solid #00561B;
     border-radius: 30px;
-    color: white;
+    color: #323D53;
     padding: 5px;
     background-color: none;
 }
@@ -187,22 +237,82 @@ footer
 
 .btn-sec
 {
-    border: 1px solid #4682B4;
+    border: 1px solid #0c1431;
     color: white;
-    background-color: #4682B4;
+    background-color: #0c1431;
     text-decoration: none;
     padding: 5px;
 }
 
 .btn-sec-rounded
 {
-    border: 1px solid #4682B4;
+    border: 1px solid #0c1431;
     border-radius: 30px;
     color: white;
-    background-color: #4682B4;
+    background-color: #0c1431;
     text-decoration: none;
     padding: 5px;
 }
 
 
 
+/* style spécifique aux petits écrans */
+@media (max-width: 576px) {
+    /* subheader */
+    .sub-header-contact-row
+    {
+        display: none;
+    }
+
+    /* bannière de l'accueil */
+    .index-header-banner-txt-padding
+    {
+        padding: 5px;
+    }
+
+    .index-header-title-text
+    {
+        margin-top: 15px;
+    }
+
+    .index-header-p-right-text
+    {
+        margin-top: 20px;
+    }
+
+    .index-header-p-e-text
+    {
+        margin-top: 20px;
+    }
+
+    #help-you
+    {
+        padding: 15px;
+    }
+
+    .img-help-you
+    {
+        margin-top: 20px;
+    }
+
+    /* about */
+    .about-profil-img
+    {
+        width: 350px;
+        height: 350px;
+        transform: rotate(0deg);
+        padding: 10px;
+    }
+
+    /* contact */
+    .page-header-banner
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45vh;
+        background-position: center;
+        background-color: #0c1431;
+        color: white;
+        margin-bottom: 10px;
+    }
+}

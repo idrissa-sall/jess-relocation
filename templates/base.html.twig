@@ -30,9 +30,7 @@
     <body>
         {% include('_includes/sub-header.html.twig') %}
         {% include('_includes/header.html.twig') %}
-        <div>
-            {% block body %}{% endblock %}
-        </div>
+        {% block body %}{% endblock %}
         {% include('_includes/footer.html.twig') %}
     </body>
 </html>
