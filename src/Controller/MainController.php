@@ -26,6 +26,26 @@ class MainController extends AbstractController
     }
 
 
+    #[Route('/services-for-individuals', name: 'app_individuals_services')]
+    public function individualsServices(): Response
+    {
+
+        return $this->render('main/individuals-services.html.twig', [
+
+        ]);
+    }
+
+
+    #[Route('/services-for-businesses', name: 'app_businesses_services')]
+    public function businessServices(): Response
+    {
+
+        return $this->render('main/business-services.html.twig', [
+
+        ]);
+    }
+
+
     #[Route('/contact', name: 'app_contact')]
     function contact(): Response
     {

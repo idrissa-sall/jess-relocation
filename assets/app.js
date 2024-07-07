@@ -22,7 +22,7 @@ $(function(){
         // Navigation
         navigation : false,
         navigationText : ["prev","next"],
-        pagination : false,
+        pagination : true,
         paginationNumbers: false,
      
         // Responsive
@@ -34,4 +34,19 @@ $(function(){
         itemsMobile : [479,1]
     });
     // end
+
+    // gestion de la class active sur le header
+    var path = window.location.pathname.split("/").pop();
+
+    $('.nav-link').each(function(){
+        
+        var actualPath = $(this).attr('href').split('/').pop();
+        if(actualPath == 'contact' && actualPath == path)
+        {
+            console.log(actualPath)
+            $('#contact-nav-link').addClass('active');
+        }
+    });
+    
+    
 })

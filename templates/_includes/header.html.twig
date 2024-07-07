@@ -11,26 +11,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{path('app_index')}}">ACCUEIL</a>
+                    <a class="nav-link" id="home-nav-link" aria-current="page" href="{{path('app_index')}}">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{path('app_about')}}">À PROPOS</a>
+                    <a class="nav-link" id="about-nav-link" href="{{path('app_about')}}">À PROPOS</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle border-prim-rounded" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle header-link-accentuate" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        SERVICES
+                        PRESTATIONS DE SERVICES
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">POUR PARTICULIER</a></li>
+                        <li><a class="dropdown-item" href="{{path('app_individuals_services')}}">POUR PARTICULIER</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">POUR ENTREPRISE</a></li>
+                        <li><a class="dropdown-item" href="{{path('app_businesses_services')}}">POUR ENTREPRISE</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{path('app_contact')}}">CONTACT</a>
+                    <a class="nav-link" id="contact-nav-link" href="{{path('app_contact')}}">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">

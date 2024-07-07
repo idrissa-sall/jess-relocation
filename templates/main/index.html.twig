@@ -50,7 +50,7 @@
             </p>
 
             <h5 class="text-shadow mt-3">
-                <a href="#" class="btn-prim">DITES-MOI TOUT <i class="bi bi-arrow-right"></i></a>
+                <a href="{{path('app_contact')}}" class="btn-prim">DITES-MOI TOUT <i class="bi bi-arrow-right"></i></a>
             </h5>
         </div>
         
@@ -62,7 +62,7 @@
     <!-- reason -->
     <div class="row" id="reasons">
         <div class="col-12 text-center">
-            <h1>Vous êtes au bon endroit <span class="border-prim-rounded-outline">SI</span></h1>
+            <h1>Vous êtes au bon endroit SI</h1>
             <ul class="list-unstyled">
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.fjfjgf</li>
@@ -75,99 +75,70 @@
 
     <!-- Customer reviews -->
     <div class="row" id="reviews">
-        <div class="col-12">
-            <h1 class="text-center">Avis <span class="border-prim-rounded-outline">clients</span></h1>
-            <div class="owl-carousel owl-theme text-center">
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
-                    </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-12 mb-2">
+            <h1 class="text-center">Avis clients</h1>
+        </div>
 
-            <div class="text-end">
-                <a href="#" title="" class="btn-prim">TOUS LES AVIS <i class="bi bi-arrow-right"></i></a>
-                <a href="#" title="" class="btn-sec">LAISSER UN AVIS <i class="bi bi-arrow-right"></i></a>
+        <div class="col-12 col-md-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
+                        adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
+                        tempora mollitia illum! Velit, sint?
+                    </p>
+                </div>
             </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
+                        adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
+                        tempora mollitia illum! Velit, sint?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
+                        adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
+                        tempora mollitia illum! Velit, sint?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="radius-circled" width="100" height="100">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
+                        adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
+                        tempora mollitia illum! Velit, sint?
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12 text-end">
+            <a href="#" title="" class="btn-prim">TOUS LES AVIS <i class="bi bi-arrow-right"></i></a>
+            <a href="#" title="" class="btn-sec">LAISSER UN AVIS <i class="bi bi-arrow-right"></i></a>
         </div>
     </div>
 
