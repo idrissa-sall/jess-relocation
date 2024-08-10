@@ -330,17 +330,27 @@ footer
 
     .index-header-title-text
     {
-        margin-top: 15px;
+        margin-top: 5px;
+    }
+
+    .index-header-title-text > h1
+    {
+        font-size: 20px;
     }
 
     .index-header-p-right-text
     {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .index-header-p-e-text
     {
-        margin-top: 20px;
+        margin-top: 5px;
+    }
+
+    .index-header-p-e-text > h4
+    {
+        font-size: 20px;
     }
 
     #help-you
