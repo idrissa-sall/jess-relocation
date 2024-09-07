@@ -76,7 +76,7 @@ body {
 
 .index-header-title-text
 {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .index-header-p-right-text
@@ -87,6 +87,11 @@ body {
 .index-header-p-e-text
 {
     margin-top: 40px;
+}
+
+.review-card
+{
+    padding-top: 5px;
 }
 
 #agency-carousel
@@ -106,6 +111,7 @@ body {
 {
     width: 350px;
     height: 350px;
+    margin-top: 20px;
 }
 
 #reasons
@@ -257,10 +263,25 @@ footer
     color: rgb(207, 199, 199);
 }
 
+.link-accentuate
+{
+    border: 1px solid #00561B;
+    border-radius: 0px;
+    padding: 2px;
+    color: white;
+    background-color: #00561B;
+    text-decoration: none;
+}
+
 .banner
 {
     background-color: #0c1431;
     color: white;
+}
+
+.header-v-separator
+{
+    border-right: 1px solid #00561B;
 }
 
 /* btn */
@@ -322,6 +343,11 @@ footer
         background-color: #00561B;
     }
 
+    .header-v-separator
+    {
+        border-right: none;
+    }
+
     /* bannière de l'accueil */
     .index-header-banner-txt-padding
     {
@@ -356,11 +382,6 @@ footer
     #help-you
     {
         padding: 15px;
-    }
-
-    .img-help-you
-    {
-        margin-top: 20px;
     }
 
     /* about */

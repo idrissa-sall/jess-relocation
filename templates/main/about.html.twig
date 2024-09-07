@@ -11,41 +11,55 @@
         <!-- presentation -->
         <div class="row">
             <div class="col-12 col-md-6 order-2 order-md-1 d-flex align-self-center">
-                <div>
-                    <h1>Prénom nom</h1>
+                <div class="wow animate__animated animate__shakeX">
+                    <h1>Jessica Gérold-Householder</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum error officia quaerat delectus!
-                        Impedit fugit iste consequatur eum odio. Culpa provident nemo fugit, ipsam quaerat unde pariatur
-                        obcaecati a ratione?
-                        Dolor assumenda temporibus, officiis quia eligendi illum harum sapiente commodi, asperiores illo
-                        quidem, distinctio iusto aut at possimus rem quas doloremque! Minima laboriosam eius beatae sapiente
-                        ipsa, fuga quis autem.
+                        Lyonnaise d’adoption depuis plus de 15 ans,
+                        je connais maintenant tous les recoins de ma jolie ville.
+                        Je saurai vous accompagner selon votre situation personnelle,
+                        familiale mais aussi professionnelle. Mariée à un américain depuis 15 ans,
+                        je connais le stress et les difficultés liées à une expatriation
+                        et saurai vous rassurer dans ce grand bouleversement.
                     </p>
 
                     <div>
-                        <a href="#" title="" class="about-icone-link"><i class="bi bi-facebook about-icone" style="color: #3b5998 "></i></a>
-                        <a href="#" title="" class="about-icone-link"><i class="bi bi-instagram about-icone" style="color: orangered"></i></a>
-                        <a href="#" title="" class="about-icone-link"><i class="bi bi-tiktok about-icone" style="color: black"></i></a>
-                        <a href="#" title="" class="about-icone-link"><i class="bi bi-linkedin about-icone" style="color: #0e76a8"></i></a>
+                        <a href="https://www.instagram.com/viensjteloge/" target="_blank" title="Retrouvez-moi sur Insta" class="about-icone-link"><i class="bi bi-instagram about-icone" style="color: orangered"></i></a>
+                        <a href="https://www.tiktok.com/@viensjteloge" target="_blank" title="Je vous met fréquemment du contenu TikTok" class="about-icone-link"><i class="bi bi-tiktok about-icone" style="color: black"></i></a>
+                        <a href="https://www.linkedin.com/in/jessica-g%C3%A9rold-householder-a92655a4/" target="_blank" title="N'hésitez pas à me suivre sur LinkedIN" class="about-icone-link"><i class="bi bi-linkedin about-icone" style="color: #0e76a8"></i></a>
                     </div>
                 </div>
                 
             </div>
             <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center" style="background-color: #0c1431;">
-                <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="" class="about-profil-img img-fluid">
+                <img src="{{asset('assets/img/jess-portrait-2.jpg')}}" alt="Jessica Gérold-Householder" class="about-profil-img img-fluid">
             </div>
         </div>
 
-        <!-- parcours -->
-        <section class="row">
-            <div class="col-12">
-                <h1 class="text-center">Je ne sais pas ce que tu souhaites mettre de plus donc tu me dira ;)</h1>
+        <!-- Lyon -->
+        <section class="row mb-2">
+            <div class="col-12 text-center">
+                <h1 class="text-center">Une idée d'appart à Lyon</h1>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nisi repudiandae tenetur necessitatibus natus fugiat blanditiis, assumenda tempore dolore corrupti, iusto nulla excepturi quae nihil soluta asperiores perferendis delectus ex.
-                </p>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-1">
+                        <img src="{{asset('assets/img/app-1.jpg')}}" alt="Appartement" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mb-1">
+                        <img src="{{asset('assets/img/app-2.jpg')}}" alt="Appartement" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-4 mb-1">
+                        <img src="{{asset('assets/img/app-3.jpg')}}" alt="Appartement" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </section>
+    </section>
+
+    <!-- appointment -->
+    <section class="row banner">
+        <div class="col-12 text-center">
+            <h1>Vous pouvez également prendre <a class="btn btn-prim wow animate__animated animate__flash" style="font-size: 20px;" href="{{path('app_appointment')}}" title="Cliquez pour prendre rendez-vous avec Jessica">RENDEZ-VOUS <i class="bi bi-calendar2-event"></i></a></h1>
+        </div>
     </section>
 </main>
 {% endblock %}

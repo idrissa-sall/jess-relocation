@@ -44,12 +44,44 @@ $(function(){
     $('.nav-link').each(function(){
         
         var actualPath = $(this).attr('href').split('/').pop();
-        if(actualPath == 'contact' && actualPath == path)
+
+        if(actualPath == '' && actualPath == path)
         {
-            console.log(actualPath)
+            $('#home-nav-link').addClass('active');
+        }
+        else if(actualPath == 'about' && actualPath == path)
+        {
+            $('#about-nav-link').addClass('active');
+        }
+        else if(actualPath == 'appointment' && actualPath == path)
+        {
+            $('#appointment-nav-link').addClass('active');
+        }
+        else if(actualPath == 'contact' && actualPath == path)
+        {
             $('#contact-nav-link').addClass('active');
         }
     });
     
-    
-})
+    // init wow js library
+    new WOW().init();
+
+    // control review form show and hide
+    const letReviewBtn = $('#let-review-btn');
+    const reviewFormSection = $('#review-form-section');
+    const closeReviewFormBtn = $('#close-review-form-btn');
+
+    // hide review form by default
+    reviewFormSection.hide();
+
+    // display review form after click on button
+    letReviewBtn.on('click', (e) => {
+        e.preventDefault();
+        reviewFormSection.show(400);
+    });
+
+    // close review form after click on close button
+    closeReviewFormBtn.on('click', (e) => {
+        reviewFormSection.hide(400);
+    });
+});

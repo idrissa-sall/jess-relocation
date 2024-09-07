@@ -1,0 +1,55 @@
+{% extends('base.html.twig') %}
+
+{% block title %}Appointment{% endblock %}
+
+{% block body %}
+<section class="page-header-banner" style="background-image: url({{asset("assets/img/vue-lyon-appointment.jpg")}})">
+</section>
+
+<main class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Vous pouvez prendre rendez-vous via le formulaire</h1>
+        </div>
+        <!-- form area -->
+        <div class="col-12">
+            <form>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nom &amp; Prénom">
+                    <label for="floatingInput">Nom &amp; Prénom</label>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-md-8">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingInput" placeholder="Jour du rendez-vous">
+                            <label for="floatingInput">Jour du rendez-vous</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="form-floating">
+                                    <input type="number" min="13" max="17" class="form-control" id="floatingInput" placeholder="Heure du rendez-vous">
+                                    <label for="floatingInput">Heure du rendez-vous</label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <h1>h 00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingInput" placeholder="Numéro de téléphone">
+                    <label for="floatingInput">Numéro de téléphone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="motif">
+                    <label for="floatingInput">Motif</label>
+                </div>
+                <button type="submit" class="btn-prim"><i class="bi bi-send"></i> Submit</button>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

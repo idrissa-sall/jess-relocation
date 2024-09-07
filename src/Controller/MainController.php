@@ -46,10 +46,26 @@ class MainController extends AbstractController
     }
 
 
+    #[Route('/appointment', name: 'app_appointment')]
+    function appointment(): Response
+    {
+        return $this->render('main/appointment.html.twig', array(
+
+        ));
+    }
+
     #[Route('/contact', name: 'app_contact')]
     function contact(): Response
     {
         return $this->render('main/contact.html.twig', [
+
+        ]);
+    }
+
+    #[Route('/reviews', name: 'app_reviews')]
+    function reviews(): Response
+    {
+        return $this->render('main/reviews.html.twig', [
 
         ]);
     }
