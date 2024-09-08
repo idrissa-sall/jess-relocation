@@ -71,15 +71,19 @@ $(function(){
     const reviewFormSection = $('#review-form-section');
     const closeReviewFormBtn = $('#close-review-form-btn');
 
+    // hide add button by default
+    letReviewBtn.hide();
 
     // display review form after click on button
     letReviewBtn.on('click', (e) => {
         e.preventDefault();
         reviewFormSection.show(400);
+        letReviewBtn.hide(400);
     });
 
     // close review form after click on close button
     closeReviewFormBtn.on('click', (e) => {
         reviewFormSection.hide(400);
+        letReviewBtn.show(400);
     });
 });

@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Review;
 use App\Form\ReviewType;
+use App\Repository\ReviewRepository;
 use App\Service\Uploader;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,7 +16,7 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 class MainController extends AbstractController
 {
     #[Route('/', name: 'app_index')]
-    public function index(Request $request, SluggerInterface $slugger, ManagerRegistry $doctrine): Response
+    public function index(Request $request, SluggerInterface $slugger, ManagerRegistry $doctrine, ReviewRepository $reviewRepository): Response
     {
         // uploader
         $targetDirectory = $this->getParameter('reviewers_pictures_directory');
@@ -30,6 +31,8 @@ class MainController extends AbstractController
         {
             // submission date = now
             $review->setSubmitionDate(new \DateTimeImmutable());
+            // set review unactive before validation
+            $review->setValid(false);
             // profil picture
             $profilPicture = $form->get('profil_picture')->getData();
             if($profilPicture)
@@ -47,9 +50,12 @@ class MainController extends AbstractController
             return $this->redirectToRoute('app_index');
         }
 
+        // last 3 reviews
+        $reviews = $reviewRepository->findBy(['isValid' => true], ['id' => 'DESC'], 3);
 
         return $this->render('main/index.html.twig', [
-            'form' => $form->createView(),
+            'form'      => $form->createView(),
+            'reviews'   => $reviews,
         ]);
     }
 
@@ -100,10 +106,12 @@ class MainController extends AbstractController
     }
 
     #[Route('/reviews', name: 'app_reviews')]
-    function reviews(): Response
+    function reviews(Request $request, ReviewRepository $reviewRepository): Response
     {
-        return $this->render('main/reviews.html.twig', [
+        $reviews = $reviewRepository->findBy(['isValid' => true], ['id' => 'DESC']);
 
+        return $this->render('main/reviews.html.twig', [
+            'reviews'   => $reviews,
         ]);
     }
 }

@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Length;
 
 class ReviewType extends AbstractType
 {
@@ -30,7 +31,15 @@ class ReviewType extends AbstractType
                 'attr'          => [
                     'class'         => 'form-control',
                     'placeholder'   => 'Message',
-                ] 
+                ],
+                'constraints'   => [
+                    new Length([
+                        'min'           => 3,
+                        'minMessage'    => "Minimum 3 caractères",
+                        'max'           => 125,
+                        'maxMessage'    => 'Maximum 125 caractères'
+                    ]),
+                ]
             ])
             ->add('profil_picture', FileType::class, [
                 'mapped'        => false,

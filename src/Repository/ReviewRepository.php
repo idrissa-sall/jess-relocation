@@ -16,6 +16,19 @@ class ReviewRepository extends ServiceEntityRepository
         parent::__construct($registry, Review::class);
     }
 
+    /**
+     * returns Object query of all reviews for pagination
+     */
+    public function getReviewsForPagination()
+    {
+        return $this->createQueryBuilder('r')
+                    ->andWhere('r.isValid = 1')
+                    ->orderBy('r.id', 'DESC')
+                    ->getQuery()
+                ;
+    }
+    
+
     //    /**
     //     * @return Review[] Returns an array of Review objects
     //     */

@@ -98,22 +98,31 @@
             <div class="col-12 mb-2">
                 <h1 class="text-center">Avis clients</h1>
             </div>
+
             <!-- customer review -->
-            <div class="col-12 col-md-4">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="Reviewer picture" class="radius-circled" width="100" height="100">
-                        <h4>Nom prénom</h4>
+            {% if reviews | length > 0 %}
+                {% for review in reviews %}
+                    <div class="col-12 col-md-4">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                {% if review.profilPicture %}
+                                    <img src="{{asset('assets/uploads/reviewers_pictures/'~review.profilPicture)}}" alt="Reviewer picture" class="radius-circled" width="100" height="100">
+                                {% else %}
+                                    <img src="{{asset('assets/img/avatar-carre.jpeg')}}" alt="Reviewer picture" class="radius-circled" width="100" height="100">
+                                {% endif %}
+                                <h4>{{review.pseudo}}</h4>
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                    {{review.message}}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo iste aspernatur
-                            adipisci officia laborum magnam eaque non repellendus quasi saepe, quae beatae facilis dolor
-                            tempora mollitia illum! Velit, sint?
-                        </p>
-                    </div>
-                </div>
-            </div>
+                {% endfor %}
+            {% else %}
+                <h4 class="text-center">Aucun avis pour le moment, n'hésitez pas à en laisser</h4>
+            {% endif %}
             
             <div class="col-12 text-end">
                 <a href="{{path('app_reviews')}}" title="Tous les avis" class="btn-prim">TOUS LES AVIS <i class="bi bi-arrow-right"></i></a>
@@ -131,6 +140,9 @@
                                 {{form_widget(form.pseudo)}}
                                 {{form_label(form.pseudo)}}
                             </div>
+                            <div class="form-error">
+                                {{form_errors(form.message)}}
+                            </div>
                             <div class="form-floating mb-3">
                                 {{form_widget(form.message)}}
                                 {{form_label(form.message)}}
@@ -139,7 +151,6 @@
                                 <div class="form-error">
                                     {{form_errors(form.profil_picture)}}
                                 </div>
-                                
                                 {{form_label(form.profil_picture)}}
                                 {{form_widget(form.profil_picture)}}
                             </div>
@@ -174,7 +185,7 @@
         <div class="col-6 col-md-3">
             <h5>1km à pied ça use</h5>
             <p>
-                J'organise et visite les appartements et vous propose un retour détaillé via photos et vidéos du bien et son environnement.
+                J'organise et visite les appartements et vous propose un retour détaillé via photos et vidéos.
             </p>
         </div>
     </div>

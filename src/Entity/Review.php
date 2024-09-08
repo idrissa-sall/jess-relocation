@@ -26,6 +26,9 @@ class Review
     #[ORM\Column]
     private ?\DateTimeImmutable $submition_date = null;
 
+    #[ORM\Column]
+    private ?bool $isValid = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +78,18 @@ class Review
     public function setSubmitionDate(\DateTimeImmutable $submition_date): static
     {
         $this->submition_date = $submition_date;
+
+        return $this;
+    }
+
+    public function isValid(): ?bool
+    {
+        return $this->isValid;
+    }
+
+    public function setValid(bool $isValid): static
+    {
+        $this->isValid = $isValid;
 
         return $this;
     }
