@@ -7,6 +7,7 @@ use App\Form\ReviewType;
 use App\Repository\ReviewRepository;
 use App\Service\Uploader;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -106,9 +107,10 @@ class MainController extends AbstractController
     }
 
     #[Route('/reviews', name: 'app_reviews')]
-    function reviews(Request $request, ReviewRepository $reviewRepository): Response
+    function reviews(Request $request, ReviewRepository $reviewRepository, PaginatorInterface $paginator): Response
     {
-        $reviews = $reviewRepository->findBy(['isValid' => true], ['id' => 'DESC']);
+        $query = $reviewRepository->getReviewsForPagination();
+        $reviews = $paginator->paginate($query, $request->query->getInt('page', 1), 9);
 
         return $this->render('main/reviews.html.twig', [
             'reviews'   => $reviews,

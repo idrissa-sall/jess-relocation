@@ -6,7 +6,7 @@
 <main class="container-fluid">
     <section class="row">
         <div class="col-12 text-center banner">
-            <h1>Jeter un coup d'œil aux avis sur Jessica</h1>
+            <h1>Jetez un coup d'œil aux avis sur Jess Relocation</h1>
         </div>
         
         <div class="col-12 my-5">
@@ -36,6 +36,12 @@
                     {% else %}
                         <h4 class="text-center">Aucun avis pour le moment, n'hésitez pas à en laisser</h4>
                     {% endif %}
+
+                    <div class="col-12 mt-2">
+                        <div class="pagination justify-content-center">
+                            {{knp_pagination_render(reviews)}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
