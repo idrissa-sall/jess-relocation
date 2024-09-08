@@ -2,6 +2,8 @@
 
 namespace App\Service;
 
+use Imagine\Gd\Imagine;
+use Imagine\Image\Box;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -30,7 +32,7 @@ class Uploader
         return $fileName;
     }
 
-    
+
     // remove uploaded file
     public function remove(string $fileName): void
     {
@@ -42,6 +44,12 @@ class Uploader
 
 
     // resize image
+    public function resize(string $fileName, int $width, int $height): void
+    {
+        $imagine = new Imagine();
+        $photo = $imagine->open($fileName);
+        $photo->resize(new Box($width, $height))->save($fileName);
+    }
 
 
     public function getTargetDirectory(): string

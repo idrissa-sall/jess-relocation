@@ -34,8 +34,10 @@ class MainController extends AbstractController
             $profilPicture = $form->get('profil_picture')->getData();
             if($profilPicture)
             {
-                $filename = $uploaderService->upload($profilPicture);
-                $review->setProfilPicture($filename);
+                $fileName = $uploaderService->upload($profilPicture);
+                $review->setProfilPicture($fileName);
+                // resize picture in directory
+                $uploaderService->resize($targetDirectory . '/' . $fileName, 350, 350);
             }
 
             $em = $doctrine->getManager();
