@@ -2,6 +2,7 @@
 
 namespace App\Service;
 
+use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\String\Slugger\SluggerInterface;
@@ -29,8 +30,18 @@ class Uploader
         return $fileName;
     }
 
+    
     // remove uploaded file
+    public function remove(string $fileName): void
+    {
+        // crée l'instance FileSystem
+        $fileSystem = new Filesystem();
+        // supprime le fichier du repertoire
+        $fileSystem->remove($this->getTargetDirectory() . '/' . $fileName);
+    }
 
+
+    // resize image
 
 
     public function getTargetDirectory(): string

@@ -71,8 +71,6 @@ $(function(){
     const reviewFormSection = $('#review-form-section');
     const closeReviewFormBtn = $('#close-review-form-btn');
 
-    // hide review form by default
-    reviewFormSection.hide();
 
     // display review form after click on button
     letReviewBtn.on('click', (e) => {

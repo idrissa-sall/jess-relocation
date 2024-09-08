@@ -6,6 +6,17 @@
 <!-- welcome banner -->
 {% include('_includes/index-header-banner.html.twig') %}
 <main class="container-fluid">
+    <!-- display message flash -->
+    <div class="row">
+        <div class="col-12">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success alert-dismissible fade show my-2" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     <!-- carousel agence -->
     <div class="row" id="agency-carousel">
         <div class="owl-carousel owl-theme owl-loaded text-center">
@@ -125,7 +136,12 @@
                                 {{form_label(form.message)}}
                             </div>
                             <div class="mb-3">
-                                {{form_row(form.profil_picture)}}
+                                <div class="form-error">
+                                    {{form_errors(form.profil_picture)}}
+                                </div>
+                                
+                                {{form_label(form.profil_picture)}}
+                                {{form_widget(form.profil_picture)}}
                             </div>
                             <button type="submit" class="btn btn-prim"><i class="bi bi-send"></i> Envoyer</button>
                         {{form_end(form)}}

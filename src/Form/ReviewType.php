@@ -41,13 +41,14 @@ class ReviewType extends AbstractType
                 ],
                 'constraints'   => [
                     new File([
-                        'maxSize'   => '6M',
+                        'maxSize'   => '8M',
                         'mimeTypes' => [
                             'image/jpg',
                             'image/jpeg',
                             'image/png',
                         ],
-                        'mimeTypesMessage' => 'Formats acceptés *.jpg, .jpeg, .png*, taille max: 5,9Mo',
+                        'mimeTypesMessage' => 'Formats acceptés *.jpg, .jpeg, .png',
+                        'maxSizeMessage' => 'La taille maximale autorisée est de 8Mo'
                     ])
                 ]
             ])
