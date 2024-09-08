@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Contact;
 use App\Entity\Review;
+use App\Form\ContactType;
 use App\Form\ReviewType;
 use App\Repository\ReviewRepository;
 use App\Service\Uploader;
@@ -49,6 +51,9 @@ class MainController extends AbstractController
             $em->flush();
             $this->addFlash('success', "Merci d'avoir soumis votre avis, après vérification, il sera publié.");
             return $this->redirectToRoute('app_index');
+        } elseif($form->isSubmitted() && !$form->isValid())
+        {
+            $this->addFlash('error', "Votre message n'a pas pu être publié, merci de vérifier votre saisie");
         }
 
         // last 3 reviews
@@ -99,10 +104,20 @@ class MainController extends AbstractController
     }
 
     #[Route('/contact', name: 'app_contact')]
-    function contact(): Response
+    function contact(Request $request): Response
     {
-        return $this->render('main/contact.html.twig', [
+        // contact form
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
+        $form->handleRequest($request);
 
+        if($form->isSubmitted() && $form->isValid())
+        {
+            dd($form);
+        }
+
+        return $this->render('main/contact.html.twig', [
+            'form'  => $form,
         ]);
     }
 

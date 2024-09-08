@@ -17,26 +17,31 @@
         </div>
         <!-- form area -->
         <div class="col-12">
-            <form>
+            {{form_start(form)}}
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInputName" placeholder="Nom &amp; Prénom">
-                    <label for="floatingInputName">Nom &amp; Prénom</label>
+                    {{form_widget(form.name)}}
+                    {{form_label(form.name)}}
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="Adresse email">
-                    <label for="floatingInputEmail">Adresse email</label>
+                    {{form_widget(form.email)}}
+                    {{form_label(form.email)}}
+                </div>
+                <div class="form-error">
+                    {{form_errors(form.subject)}}
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInputSubject" placeholder="Sujet">
-                    <label for="floatingInputSubject">Sujet</label>
+                    {{form_widget(form.subject)}}
+                    {{form_label(form.subject)}}
+                </div>
+                <div class="form-error">
+                    {{form_errors(form.message)}}
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Message"
-                        id="floatingTextareaMsg"></textarea>
-                    <label for="floatingTextareaMsg">Message</label>
+                    {{form_widget(form.message)}}
+                    {{form_label(form.message)}}
                 </div>
-                <button type="submit" class="btn-prim"><i class="bi bi-send"></i> Submit</button>
-            </form>
+                <button type="submit" class="btn btn-prim"><i class="bi bi-send"></i> Envoyer</button>
+            {{form_end(form)}}
         </div>
     </div>
 </main>
