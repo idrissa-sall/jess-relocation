@@ -2,17 +2,33 @@
 
 namespace App\Controller;
 
+use App\Entity\Review;
+use App\Form\ReviewType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
 {
     #[Route('/', name: 'app_index')]
-    public function index(): Response
+    public function index(Request $request): Response
     {
-        return $this->render('main/index.html.twig', [
+        // review form
+        $review = new Review();
+        $form = $this->createForm(ReviewType::class, $review);
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid())
+        {
+            // submission date = now
+            $review->setSubmitionDate(new \DateTimeImmutable());
+            // profil picture
             
+        }
+
+        return $this->render('main/index.html.twig', [
+            'form' => $form->createView(),
         ]);
     }
 

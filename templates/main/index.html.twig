@@ -115,22 +115,20 @@
                     <div class="col-12">
                         <div class="text-end" style="font-size: 40px; cursor: pointer"><i title="Fermer" id="close-review-form-btn" class="bi bi-x" style="color: #0c1431"></i></div>
                         <h1 class="text-center">Laissez un avis sur Jessica</h1>
-                        <form>
+                        {{form_start(form)}}
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInputName" placeholder="Nom &amp; Prénom">
-                                <label for="floatingInputName">Nom &amp; Prénom</label>
+                                {{form_widget(form.pseudo)}}
+                                {{form_label(form.pseudo)}}
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Message"
-                                    id="floatingTextareaMsg"></textarea>
-                                <label for="floatingTextareaMsg">Message</label>
+                                {{form_widget(form.message)}}
+                                {{form_label(form.message)}}
                             </div>
                             <div class="mb-3">
-                                <label for="formFile" class="form-label">Vous pouvez joindre une photo de profil</label>
-                                <input class="form-control" type="file" id="formFile">
+                                {{form_row(form.profil_picture)}}
                             </div>
-                            <button type="submit" class="btn-prim"><i class="bi bi-send"></i> Submit</button>
-                        </form>
+                            <button type="submit" class="btn btn-prim"><i class="bi bi-send"></i> Envoyer</button>
+                        {{form_end(form)}}
                     </div>
                 </div>
             </div>

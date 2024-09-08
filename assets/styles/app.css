@@ -305,6 +305,12 @@ footer
     padding: 5px;
 }
 
+.btn-prim:hover, .btn-prim-rounded:hover
+{
+    background-color: #103c1e;
+    color: white;
+}
+
 .btn-sec
 {
     border: 1px solid #0c1431;
@@ -324,6 +330,11 @@ footer
     padding: 5px;
 }
 
+.btn-sec:hover, .btn-sec-rounded:hover
+{
+    background-color: #102572;
+    color: white;
+}
 
 
 /* style spécifique aux petits écrans */
