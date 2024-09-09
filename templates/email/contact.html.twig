@@ -1,0 +1,16 @@
+{% apply inline_css %}
+    <style>
+        .sender
+        {
+            font-weight: bold;
+        }
+    </style>
+
+    <h3>Email reçu de <span class="sender">{{name | title}}</span></h3>
+    <h4>L'adresse mail de l'expéditeur est <span class="sender">{{mail}}</span></h4>
+
+    <p>
+        {{message}}
+    </p>
+
+{% endapply %}

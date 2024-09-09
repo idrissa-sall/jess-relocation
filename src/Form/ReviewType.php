@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class ReviewType extends AbstractType
 {
@@ -23,6 +24,11 @@ class ReviewType extends AbstractType
                 'attr'          => [
                     'class'         => 'form-control',
                     'placeholder'   => 'Nom et Prénom',
+                ],
+                'constraints'   => [
+                    new NotBlank([
+                        'message' => 'Ce champ ne peut pas être vide.',
+                    ]),
                 ]
             ])
             ->add('message', TextareaType::class, [
@@ -38,6 +44,9 @@ class ReviewType extends AbstractType
                         'minMessage'    => "Minimum 3 caractères",
                         'max'           => 125,
                         'maxMessage'    => 'Maximum 125 caractères'
+                    ]),
+                    new NotBlank([
+                        'message' => 'Ce champ ne peut pas être vide.',
                     ]),
                 ]
             ])

@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class ContactType extends AbstractType
 {
@@ -22,7 +23,12 @@ class ContactType extends AbstractType
                 'attr'      => [
                     'placeholder'   => 'Nom et Prénom',
                     'class'         => 'form-control'
-                ]
+                ],
+                'constraints' => [
+                    new NotBlank([
+                        'message' => 'Ce champ ne peut pas être vide.',
+                    ]),
+                ],
             ))
             ->add('email', EmailType::class, array(
                 'label'     => 'Email',
@@ -45,7 +51,10 @@ class ContactType extends AbstractType
                         'minMessage'    => "Minimum 5 caractères",
                         'max'           => 50,
                         'maxMessage'    => 'Maximum 50 caractères'
-                    ])
+                    ]),
+                    new NotBlank([
+                        'message' => 'Ce champ ne peut pas être vide.',
+                    ]),
                 ]
             ))
             ->add('message', TextareaType::class, array(
@@ -57,9 +66,12 @@ class ContactType extends AbstractType
                 ],
                 'constraints' => [
                     new Length([
-                        'min'           => 20,
-                        'minMessage'    => "Minimum 20 caractères",
-                    ])
+                        'min'           => 15,
+                        'minMessage'    => "Minimum 15 caractères",
+                    ]),
+                    new NotBlank([
+                        'message' => 'Ce champ ne peut pas être vide.',
+                    ]),
                 ]
             ))
         ;

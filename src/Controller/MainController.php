@@ -7,12 +7,14 @@ use App\Entity\Review;
 use App\Form\ContactType;
 use App\Form\ReviewType;
 use App\Repository\ReviewRepository;
+use App\Service\Mailer;
 use App\Service\Uploader;
 use Doctrine\Persistence\ManagerRegistry;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
@@ -104,8 +106,11 @@ class MainController extends AbstractController
     }
 
     #[Route('/contact', name: 'app_contact')]
-    function contact(Request $request): Response
+    function contact(Request $request, MailerInterface $mailerInterface): Response
     {
+        // mailer
+        $mailerService = new Mailer($mailerInterface);
+
         // contact form
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
@@ -113,7 +118,11 @@ class MainController extends AbstractController
 
         if($form->isSubmitted() && $form->isValid())
         {
-            dd($form);
+            // send email
+            $mailerService->sendMail($contact->getName(), $contact->getEmail(), $contact->getSubject(), $contact->getMessage());
+            // flash message and redirect
+            $this->addFlash('success', "Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais");
+            return $this->redirectToRoute('app_contact');
         }
 
         return $this->render('main/contact.html.twig', [
