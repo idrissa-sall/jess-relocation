@@ -2,13 +2,17 @@
 
 namespace App\Controller;
 
+use App\Entity\Appointment;
 use App\Entity\Contact;
 use App\Entity\Review;
+use App\Form\AppointmentType;
 use App\Form\ContactType;
 use App\Form\ReviewType;
+use App\Repository\AppointmentRepository;
 use App\Repository\ReviewRepository;
 use App\Service\Mailer;
 use App\Service\Uploader;
+use DateTimeImmutable;
 use Doctrine\Persistence\ManagerRegistry;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -98,10 +102,39 @@ class MainController extends AbstractController
 
 
     #[Route('/appointment', name: 'app_appointment')]
-    function appointment(): Response
+    function appointment(Request $request, ManagerRegistry $doctrine, AppointmentRepository $appointmentRepository): Response
     {
-        return $this->render('main/appointment.html.twig', array(
+        // appointment form
+        $appointment = new Appointment();
+        $form = $this->createForm(AppointmentType::class, $appointment);
+        $form->handleRequest($request);
 
+        if($form->isSubmitted() && $form->isValid())
+        {
+            // verify if an appointment exist with same date and same hour
+            $existingAppointment = $appointmentRepository->findOneBy(['date_apm' => $appointment->getDateApm(), 'hour' => $appointment->getHour()]);
+            if($existingAppointment != null)
+            {
+                $this->addFlash('error', "Un rendez-vous est déjà prevue pour la date et l'heure que vous avez sélectionné, merci de modifier votre saisie.");
+                $this->redirectToRoute('app_appointment');
+            } else {
+                $appointment->setSubmitionDate(new DateTimeImmutable());
+                $appointment->setDone(false);
+
+                $em = $doctrine->getManager();
+                $em->persist($appointment);
+                $em->flush();
+
+                $this->addFlash('success', "Votre demande à bien été pris en compte, à bientôt!");
+                return $this->redirectToRoute('app_appointment');
+            }
+        } elseif($form->isSubmitted() && !$form->isValid())
+        {
+            $this->addFlash('error', "Votre demande de rendez-vous n'a pas pu aboutir, merci de verifier votre saisie");
+        }
+
+        return $this->render('main/appointment.html.twig', array(
+            'form'  => $form->createView(),
         ));
     }
 

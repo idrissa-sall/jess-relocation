@@ -10,7 +10,7 @@ class Mailer
 {
     public function __construct(private MailerInterface $mailerInterface) {}
 
-    // send email from form
+    // send email from contact form
     public function sendMail($name, $mail, $subject, $message): void
     {
         $email = (new TemplatedEmail())

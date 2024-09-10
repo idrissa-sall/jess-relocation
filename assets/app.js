@@ -71,6 +71,7 @@ $(function(){
     const reviewFormSection = $('#review-form-section');
     const closeReviewFormBtn = $('#close-review-form-btn');
 
+    //* review form
     // hide add button by default
     letReviewBtn.hide();
 
@@ -86,4 +87,21 @@ $(function(){
         reviewFormSection.hide(400);
         letReviewBtn.show(400);
     });
+    //* end
+
+    //* appointment date input
+    // date input
+    let appointmentDate = $('#appointment_date_apm');
+    let btnSubmitAppointment = $('#btn-submit-appointment');
+
+    btnSubmitAppointment.on('click', (e) => {
+        var selectedDate = new Date(appointmentDate.val());
+        // week end invalid
+        if(selectedDate.getDay() == 6 || selectedDate.getDay() == 0)
+        {
+            alert('Date invalide');
+            e.preventDefault();
+        }
+    });
+    
 });
