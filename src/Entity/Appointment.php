@@ -117,7 +117,7 @@ class Appointment
         return $this->is_done;
     }
 
-    public function setDone(bool $is_done): static
+    public function setIsDone(bool $is_done): static
     {
         $this->is_done = $is_done;
 

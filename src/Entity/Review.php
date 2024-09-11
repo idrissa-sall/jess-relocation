@@ -87,7 +87,7 @@ class Review
         return $this->isValid;
     }
 
-    public function setValid(bool $isValid): static
+    public function setIsValid(bool $isValid): static
     {
         $this->isValid = $isValid;
 

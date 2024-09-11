@@ -41,7 +41,7 @@ class MainController extends AbstractController
             // submission date = now
             $review->setSubmitionDate(new \DateTimeImmutable());
             // set review unactive before validation
-            $review->setValid(false);
+            $review->setIsValid(false);
             // profil picture
             $profilPicture = $form->get('profil_picture')->getData();
             if($profilPicture)
@@ -119,7 +119,7 @@ class MainController extends AbstractController
                 $this->redirectToRoute('app_appointment');
             } else {
                 $appointment->setSubmitionDate(new DateTimeImmutable());
-                $appointment->setDone(false);
+                $appointment->setIsDone(false);
 
                 $em = $doctrine->getManager();
                 $em->persist($appointment);
