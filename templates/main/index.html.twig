@@ -2,6 +2,16 @@
 
 {% block title %}Viens J'T Loge{% endblock %}
 
+{% block metatags %}
+    <meta name="description" content="Je vous aides à trouver le logement qui vous convient."/>
+    <meta property="og:title" content="Viens J'T Loge" />
+    <meta property="og:url" content="https://www.jess-relocation.com/" />
+    <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
+    <meta property="og:description" content="Je vous aides à trouver le logement qui vous convient." />
+    <meta property="og:site_name" content="jess-relocation" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+
 {% block body %}
 <!-- welcome banner -->
 {% include('_includes/index-header-banner.html.twig') %}

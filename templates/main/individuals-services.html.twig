@@ -2,6 +2,16 @@
 
 {% block title %}Individuals Services{% endblock %}
 
+{% block metatags %}
+    <meta name="description" content="Découvrez mes services pour les particuliers."/>
+    <meta property="og:title" content="Individuals Services" />
+    <meta property="og:url" content="https://www.jess-relocation.com/" />
+    <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
+    <meta property="og:description" content="Découvrez mes services pour les particuliers." />
+    <meta property="og:site_name" content="jess-relocation" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+
 {% block body %}
 
 <section class="page-header-banner" style="background-image: url({{asset("assets/img/vue-lyon-individuals.jpg")}})">

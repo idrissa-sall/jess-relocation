@@ -2,6 +2,16 @@
 
 {% block title %}About{% endblock %}
 
+{% block metatags %}
+    <meta name="description" content="Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?"/>
+    <meta property="og:title" content="About" />
+    <meta property="og:url" content="https://www.jess-relocation.com/" />
+    <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
+    <meta property="og:description" content="Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?" />
+    <meta property="og:site_name" content="jess-relocation" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+
 {% block body %}
 
 <section class="page-header-banner" style="background-image: url({{asset("assets/img/vue-lyon-about.jpg")}})">
