@@ -21,5 +21,11 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    App\EventListener\ImageDeleteListener:
+        arguments:
+            $targetDirectory: '%kernel.project_dir%/public/assets/uploads/reviewers_pictures'
+        tags:
+            - { name: doctrine.event_listener, event: preRemove }
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
