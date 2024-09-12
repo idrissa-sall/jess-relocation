@@ -33,7 +33,7 @@ class AppointmentCrudController extends AbstractCrudController
             ->setDefaultSort(['id' => 'DESC'])
             ->setPaginatorPageSize(20)
             ->setPaginatorRangeSize(4)
-            ->hideNullValues()
+            // ->hideNullValues()
             // ...
         ;
     }
