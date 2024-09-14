@@ -102,8 +102,10 @@ class MainController extends AbstractController
 
 
     #[Route('/appointment', name: 'app_appointment')]
-    function appointment(Request $request, ManagerRegistry $doctrine, AppointmentRepository $appointmentRepository): Response
+    function appointment(Request $request, ManagerRegistry $doctrine, AppointmentRepository $appointmentRepository, MailerInterface $mailerInterface): Response
     {
+        $mailer = new Mailer($mailerInterface);
+
         // appointment form
         $appointment = new Appointment();
         $form = $this->createForm(AppointmentType::class, $appointment);
@@ -125,6 +127,7 @@ class MainController extends AbstractController
                 $em->persist($appointment);
                 $em->flush();
 
+                $mailer->sendReservationEmail($appointment->getName());
                 $this->addFlash('success', "Votre demande à bien été pris en compte, à bientôt!");
                 return $this->redirectToRoute('app_appointment');
             }
@@ -152,7 +155,7 @@ class MainController extends AbstractController
         if($form->isSubmitted() && $form->isValid())
         {
             // send email
-            $mailerService->sendMail($contact->getName(), $contact->getEmail(), $contact->getSubject(), $contact->getMessage());
+            $mailerService->sendContactMail($contact->getName(), $contact->getEmail(), $contact->getSubject(), $contact->getMessage());
             // flash message and redirect
             $this->addFlash('success', "Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais");
             return $this->redirectToRoute('app_contact');

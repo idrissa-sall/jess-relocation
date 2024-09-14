@@ -11,7 +11,7 @@ class Mailer
     public function __construct(private MailerInterface $mailerInterface) {}
 
     // send email from contact form
-    public function sendMail($name, $mail, $subject, $message): void
+    public function sendContactMail($name, $mail, $subject, $message): void
     {
         $email = (new TemplatedEmail())
             ->from('contact@jess-relocation.com')
@@ -24,6 +24,23 @@ class Mailer
                 'name'      => $name,
                 'mail'     => $mail,
             ]);
+
+        $this->mailerInterface->send($email);
+    }
+
+
+    // send reservation mail
+    public function sendReservationEmail($name): void
+    {
+        $email = (new TemplatedEmail())
+            ->from('contact@jess-relocation.com')
+            ->to('contact@jess-relocation.com')
+            ->subject('Nouvelle demande de rendez-vous')
+            ->htmlTemplate('email/appointment.html.twig')
+            ->context([
+                'name'  => $name,
+            ])
+        ;
 
         $this->mailerInterface->send($email);
     }
