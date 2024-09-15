@@ -50,6 +50,13 @@ body {
     background-color: #00561B;
 }
 
+.nav-link:hover
+{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #00561B;
+}
+
 /* languages icones */
 .langue-icone
 {
