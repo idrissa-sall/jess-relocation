@@ -176,4 +176,11 @@ class MainController extends AbstractController
             'reviews'   => $reviews,
         ]);
     }
+
+    #[Route('/legal-notices', name: 'app_legal_notices')]
+    public function legalNotices(): Response
+    {
+
+        return $this->render('main/legal-notices.html.twig', []);
+    }
 }
