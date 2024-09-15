@@ -41,15 +41,13 @@
                     </li>
                 {% endif %}
                 <li class="header-v-separator"></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="english-lang-icon">
-                        <img src="{{asset('assets/icones/royaume-uni.png')}}" alt="Fr" class="langue-icone">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" id="french-lang-icon">
-                        <img src="{{asset('assets/icones/la-france.png')}}" alt="Fr" class="langue-icone">                    </a>
-                </li>
+                {% for locale in locales %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{path('app_change_locale', {'lang': locale})}}">
+                            <img src="{{asset('assets/icones/'~locale~'.png')}}" alt="{{locale}}" class="langue-icone">
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>

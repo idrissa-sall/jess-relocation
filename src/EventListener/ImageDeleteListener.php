@@ -8,12 +8,8 @@ use Symfony\Component\Filesystem\Filesystem;
 
 class ImageDeleteListener
 {
-    private $targetDirectory;
 
-    public function __construct(string $targetDirectory)
-    {
-        $this->targetDirectory = $targetDirectory;
-    }
+    public function __construct(private string $targetDirectory){}
 
     public function preRemove(LifecycleEventArgs $args)
     {

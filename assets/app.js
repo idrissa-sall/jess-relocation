@@ -103,19 +103,4 @@ $(function(){
             e.preventDefault();
         }
     });
-
-    // todo: remove this block when translation
-    // blocking langage icons
-    let englishLangIcon = $('#english-lang-icon');
-    let frenchLangIcon = $('#french-lang-icon');
-    
-    englishLangIcon.on('click', (e) => {
-        alert('Translation is not available yet');
-        e.preventDefault();
-    });
-
-    frenchLangIcon.on('click', (e) => {
-        alert("La traduction n'est pas encore disponible");
-        e.preventDefault();
-    });
 });

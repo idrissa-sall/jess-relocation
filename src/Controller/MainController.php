@@ -183,4 +183,19 @@ class MainController extends AbstractController
 
         return $this->render('main/legal-notices.html.twig', []);
     }
+
+    #[Route('/change-locale/{lang}', name: 'app_change_locale')]
+    public function changeLocale(string $lang, Request $request): Response
+    {
+        // get languages in services.yaml and declared in twig.yaml
+        $localesLanguages = $this->getParameter('app.locales');
+        // verify if our parameter lang is in our local languages table
+        if(in_array($lang, $localesLanguages))
+        {
+            $request->getSession()->set('_locale', $lang);
+        }
+
+        // refresh the page
+        return $this->redirect($request->headers->get('referer'));
+    }
 }
