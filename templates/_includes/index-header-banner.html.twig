@@ -1,7 +1,7 @@
 <section class="container-fluid" id="index-header-banner" style="background-image: url({{asset("assets/img/vue-lyon-shadow.jpg")}});">
     <div class="row">
         <div class="col-12 index-header-title-text">
-            <h1 class="index-header-banner-txt-padding text-shadow">Besoin d’un logement <br> dans la métropole lyonnaise?</h1>
+            <h1 class="index-header-banner-txt-padding text-shadow">{% trans %}Besoin d’un logement{% endtrans %} <br> {% trans %}dans la métropole lyonnaise?{% endtrans %}</h1>
         </div>
 
         <!-- petit texte d'entrée invisible-->
@@ -9,10 +9,10 @@
             <div class="row">
                 <div class="offset-3 col-9 text-end">
                     <p class="index-header-banner-txt-padding text-shadow">
-                        Ne cherchez plus votre bien à la location, je m’occupe de tout.
+                        {% trans %}Ne cherchez plus votre bien à la location, je m’occupe de tout.
                         Grâce à ma connaissance du secteur et du marché ultra-tendu de la location à Lyon,
                         je vous accompagne dans votre recherche d’appartement de l’établissement de votre cahier des charges
-                        à votre entrée dans les lieux
+                        à votre entrée dans les lieux.{% endtrans %}
                     </p>
                 </div>
             </div>
@@ -20,7 +20,7 @@
 
         <div class="col-12 index-header-p-e-text">
             <h4 class="index-header-banner-txt-padding text-shadow">
-                Pour <a href="{{path('app_individuals_services')}}" class="link-accentuate" title="Services pour particuliers">PARTICULIER</a> ou pour <a href="{{path('app_businesses_services')}}" class="link-accentuate" title="Services pour particuliers">ENTREPRISE</a>
+                {% trans %}Pour{% endtrans %} <a href="{{path('app_individuals_services')}}" class="link-accentuate" title="{% trans %}Services pour particuliers{% endtrans %}">{% trans %}PARTICULIER{% endtrans %}</a> {% trans %}ou pour{% endtrans %} <a href="{{path('app_businesses_services')}}" class="link-accentuate" title="{% trans %}Services pour entreprises{% endtrans %}">{% trans %}ENTREPRISE{% endtrans %}</a>
             </h4>
         </div>
     </div>

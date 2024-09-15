@@ -21,11 +21,12 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 class MainController extends AbstractController
 {
     #[Route('/', name: 'app_index')]
-    public function index(Request $request, SluggerInterface $slugger, ManagerRegistry $doctrine, ReviewRepository $reviewRepository): Response
+    public function index(Request $request, SluggerInterface $slugger, ManagerRegistry $doctrine, ReviewRepository $reviewRepository, TranslatorInterface $translator): Response
     {
         // uploader
         $targetDirectory = $this->getParameter('reviewers_pictures_directory');
@@ -55,11 +56,14 @@ class MainController extends AbstractController
             $em = $doctrine->getManager();
             $em->persist($review);
             $em->flush();
-            $this->addFlash('success', "Merci d'avoir soumis votre avis, après vérification, il sera publié.");
+
+            $message = $translator->trans("Merci d'avoir soumis votre avis, après vérification, il sera publié.");
+            $this->addFlash('success', $message);
             return $this->redirectToRoute('app_index');
         } elseif($form->isSubmitted() && !$form->isValid())
         {
-            $this->addFlash('error', "Votre message n'a pas pu être publié, merci de vérifier votre saisie");
+            $message = $translator->trans("Votre message n'a pas pu être publié, merci de vérifier votre saisie");
+            $this->addFlash('error', $message);
         }
 
         // last 3 reviews
@@ -102,7 +106,7 @@ class MainController extends AbstractController
 
 
     #[Route('/appointment', name: 'app_appointment')]
-    function appointment(Request $request, ManagerRegistry $doctrine, AppointmentRepository $appointmentRepository, MailerInterface $mailerInterface): Response
+    function appointment(TranslatorInterface $translator, Request $request, ManagerRegistry $doctrine, AppointmentRepository $appointmentRepository, MailerInterface $mailerInterface): Response
     {
         $mailer = new Mailer($mailerInterface);
 
@@ -117,7 +121,8 @@ class MainController extends AbstractController
             $existingAppointment = $appointmentRepository->findOneBy(['date_apm' => $appointment->getDateApm(), 'hour' => $appointment->getHour()]);
             if($existingAppointment != null)
             {
-                $this->addFlash('error', "Un rendez-vous est déjà prevue pour la date et l'heure que vous avez sélectionné, merci de modifier votre saisie.");
+                $message = $translator->trans("Un rendez-vous est déjà prevue pour la date et l'heure que vous avez sélectionné, merci de modifier votre saisie.");
+                $this->addFlash('error', $message);
                 $this->redirectToRoute('app_appointment');
             } else {
                 $appointment->setSubmitionDate(new DateTimeImmutable());
@@ -128,12 +133,15 @@ class MainController extends AbstractController
                 $em->flush();
 
                 $mailer->sendReservationEmail($appointment->getName());
-                $this->addFlash('success', "Votre demande à bien été pris en compte, à bientôt!");
+
+                $message = $translator->trans("Votre demande à bien été pris en compte, à bientôt!");
+                $this->addFlash('success', $message);
                 return $this->redirectToRoute('app_appointment');
             }
         } elseif($form->isSubmitted() && !$form->isValid())
         {
-            $this->addFlash('error', "Votre demande de rendez-vous n'a pas pu aboutir, merci de verifier votre saisie");
+            $message = $translator->trans("Votre demande de rendez-vous n'a pas pu aboutir, merci de verifier votre saisie");
+            $this->addFlash('error', $message);
         }
 
         return $this->render('main/appointment.html.twig', array(
@@ -142,7 +150,7 @@ class MainController extends AbstractController
     }
 
     #[Route('/contact', name: 'app_contact')]
-    function contact(Request $request, MailerInterface $mailerInterface): Response
+    function contact(TranslatorInterface $translator, Request $request, MailerInterface $mailerInterface): Response
     {
         // mailer
         $mailerService = new Mailer($mailerInterface);
@@ -157,7 +165,8 @@ class MainController extends AbstractController
             // send email
             $mailerService->sendContactMail($contact->getName(), $contact->getEmail(), $contact->getSubject(), $contact->getMessage());
             // flash message and redirect
-            $this->addFlash('success', "Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais");
+            $message = $translator->trans("Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais");
+            $this->addFlash('success', $message);
             return $this->redirectToRoute('app_contact');
         }
 

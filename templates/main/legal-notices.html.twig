@@ -1,77 +1,77 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Legal notices{% endblock %}
+{% block title %}{% trans %}Mentions légales et politique de confidentialité{% endtrans %}{% endblock %}
 
 {% block body %}
 <main class="container">
     <section class="row">
         <section class="col-12">
-            <h1 class="text-center">Mentions légales</h1>
+            <h1 class="text-center">{% trans %}Mentions légales{% endtrans %}</h1>
             <hr>
-            <h3><i><u>Éditeur du site</u></i></h3>
+            <h3><i><u>{% trans %}Éditeur du site{% endtrans %}</u></i></h3>
             <p>
-                Le présent site est édité par Jessica Gérold-Householder. <br>
-                <strong>Adresse:</strong> 1 rue de balmont 69220 Belleville-en-Beaujolais <br>
-                <strong>Siret:</strong> 852 537 273 <br>
-                <strong>Email:</strong> contact@jess-relocation.com <br>
-                <strong>Téléphone:</strong> +33 6 52 26 97 15
+                {% trans %}Le présent site est édité par Jessica Gérold-Householder.{% endtrans %} <br>
+                <strong>{% trans %}Adresse{% endtrans %}:</strong> 1 rue de balmont 69220 Belleville-en-Beaujolais <br>
+                <strong>{% trans %}Siret:{% endtrans %}</strong> 852 537 273 <br>
+                <strong>{% trans %}Email:{% endtrans %}</strong> contact@jess-relocation.com <br>
+                <strong>{% trans %}Téléphone{% endtrans %}:</strong> +33 6 52 26 97 15
             </p>
 
             <hr>
-            <h3><i><u>Hébergeur</u></i></h3>
+            <h3><i><u>{% trans %}Hébergeur{% endtrans %}</u></i></h3>
             <p>
-                Le site internet https://www.jess-relocation.com est hébergé chez 1&amp;1 Ionos. <br>
-                <strong>Adresse:</strong> 7 place de la Gare BP 70109 57200 Sarreguemines Cedex <br>
-                <strong>Email:</strong> info@ionos.fr <br>
-                <strong>Téléphone:</strong> 0970 808 911 <br>
+                {% trans %}Le site internet https://www.jess-relocation.com est hébergé chez 1&amp;1 Ionos.{% endtrans %} <br>
+                <strong>{% trans %}Adresse:{% endtrans %}</strong> 7 place de la Gare BP 70109 57200 Sarreguemines Cedex <br>
+                <strong>{% trans %}Email:{% endtrans %}</strong> info@ionos.fr <br>
+                <strong>{% trans %}Téléphone:{% endtrans %}</strong> 0970 808 911 <br>
             </p>
             <hr>
 
-            <h3><i><u>Propriété intellectuelle</u></i></h3>
+            <h3><i><u>{% trans %}Propriété intellectuelle{% endtrans %}</u></i></h3>
             <p>
-                Le contenu présent sur https://www.jess-relocation.com est la propriété exclusive de Jessica Gérold-Householder,
+                {% trans %}Le contenu présent sur https://www.jess-relocation.com est la propriété exclusive de Jessica Gérold-Householder,
                 à l’exception des logos et marques des agences immobilières, et des réseaux sociaux ainsi que  certaines images utilisées notamment
-                sur les bannières et les pages présentant les services de Jessica Gérold-Householder, qui proviennent de banques d'images.
+                sur les bannières et les pages présentant les services de Jessica Gérold-Householder, qui proviennent de banques d'images.{% endtrans %}
             </p>
             <p>
-                Toute reproduction, modification ou distribution des ses éléments est strictement interdit sans l'accord de Jessica Gérold-Householder, à l’exception
-                des images provenant de banques d'images.
+                {% trans %}Toute reproduction, modification ou distribution des ses éléments est strictement interdit sans l'accord de Jessica Gérold-Householder, à l’exception
+                des images provenant de banques d'images.{% endtrans %}
             </p>
             <br>
             
-            <h1 class="text-center">Politique de confidentialité</h1>
+            <h1 class="text-center">{% trans %}Politique de confidentialité{% endtrans %}</h1>
             <hr>
-            <h3><i><u>Données collectées</u></i></h3>
+            <h3><i><u>{% trans %}Données collectées{% endtrans %}</u></i></h3>
             <p>
-                Les données personnelles sont collectées essentiellement à partir:
+                {% trans %}Les données personnelles sont collectées essentiellement à partir:{% endtrans %}
                 <ul>
-                    <li>Du formulaire de contact</li>
-                    <li>Du formulaire de prise de rendez-vous</li>
+                    <li>{% trans %}Du formulaire de contact{% endtrans %}</li>
+                    <li>{% trans %}Du formulaire de prise de rendez-vous{% endtrans %}</li>
                 </ul>
-                Certaines données liée à votre trafic sur le site sont également collectées.
+                {% trans %}Certaines données liées à votre trafic sur le site sont également collectées.{% endtrans %}
             </p>
             <hr>
 
-            <h3><i><u>Utilisation de vos données</u></i></h3>
+            <h3><i><u>{% trans %}Utilisation de vos données{% endtrans %}</u></i></h3>
             <p>
-                Nous utilisons vos données pour:
+                {% trans %}Nous utilisons vos données pour:{% endtrans %}
                 <ul>
-                    <li>La prise de contact dans le cas de rendez-vous ou de demande d'informations</li>
-                    <li>Nous assurer de l'ergonomie du site sur le matériel que vous utiliser pour y accéder.</li>
+                    <li>{% trans %}La prise de contact dans le cas de rendez-vous ou de demande d'informations{% endtrans %}</li>
+                    <li>{% trans %}Nous assurer de l'ergonomie du site sur le matériel que vous utiliser pour y accéder.{% endtrans %}</li>
                 </ul>
             </p>
             <hr>
             
-            <h3><i><u>Vos droits</u></i></h3>
+            <h3><i><u>{% trans %}Vos droits{% endtrans %}</u></i></h3>
             <p>
-                Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 et du Règlement (UE) 2016/679.
-                Vous avez les droits d’accès, de rectification, de portabilité, d’effacement de vos données, ou de limitation du traitement.
+                {% trans %}Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 et du Règlement (UE) 2016/679.
+                Vous avez les droits d’accès, de rectification, de portabilité, d’effacement de vos données, ou de limitation du traitement.{% endtrans %}
             </p>
             <hr>
 
-            <h3><i><u>Cookies</u></i></h3>
+            <h3><i><u>{% trans %}Cookies{% endtrans %}</u></i></h3>
             <p>
-                Ce site utilise des cookies pour améliorer l'expérience utilisateur avec votre consentement.
+                {% trans %}Ce site utilise des cookies pour améliorer l'expérience utilisateur avec votre consentement.{% endtrans %}
             </p>
             <hr>
         </section>

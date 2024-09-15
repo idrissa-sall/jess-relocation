@@ -1,13 +1,13 @@
 {% extends('base.html.twig') %}
 
-{% block title %}Appointment{% endblock %}
+{% block title %}{% trans %}Prendre rendez-vous{% endtrans %}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Vous pouvez directement prendre rendez-vous depuis le site internet."/>
-    <meta property="og:title" content="Appointment" />
+    <meta name="description" content="{% trans %}Vous pouvez directement prendre rendez-vous depuis le site internet.{% endtrans %}"/>
+    <meta property="og:title" content="{% trans %}Prendre rendez-vous{% endtrans %}" />
     <meta property="og:url" content="https://www.jess-relocation.com/" />
     <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
-    <meta property="og:description" content="Vous pouvez directement prendre rendez-vous depuis le site internet." />
+    <meta property="og:description" content="{% trans %}Vous pouvez directement prendre rendez-vous depuis le site internet.{% endtrans %}" />
     <meta property="og:site_name" content="jess-relocation" />
     <meta property="og:type" content="website" />
 {% endblock %}
@@ -19,7 +19,7 @@
 <main class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center">Vous pouvez prendre rendez-vous via le formulaire</h1>
+            <h1 class="text-center">{% trans %}Vous pouvez prendre rendez-vous via le formulaire{% endtrans %}</h1>
             {% for message in app.flashes('success') %}
                 <div class="alert alert-success alert-dismissible fade show my-2" role="alert">
                     {{ message }}
@@ -73,7 +73,7 @@
                     {{form_widget(form.reason)}}
                     {{form_label(form.reason)}}
                 </div>
-                <button type="submit" id="btn-submit-appointment" class="btn btn-prim"><i class="bi bi-send"></i> Envoyer</button>
+                <button type="submit" id="btn-submit-appointment" class="btn btn-prim"><i class="bi bi-send"></i> {% trans %}Envoyer{% endtrans %}</button>
             {{form_end(form)}}
         </div>
     </div>

@@ -1,13 +1,13 @@
 {% extends('base.html.twig') %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}{% trans %}Contact{% endtrans %}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais."/>
-    <meta property="og:title" content="Contact" />
+    <meta name="description" content="{% trans %}Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais.{% endtrans %}"/>
+    <meta property="og:title" content="{% trans %}Contact{% endtrans %}" />
     <meta property="og:url" content="https://www.jess-relocation.com/" />
     <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
-    <meta property="og:description" content="Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais." />
+    <meta property="og:description" content="{% trans %}Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais.{% endtrans %}" />
     <meta property="og:site_name" content="jess-relocation" />
     <meta property="og:type" content="website" />
 {% endblock %}
@@ -25,10 +25,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             {% endfor %}
-            <h1 class="text-center">Besoin d'un logement ?</h1>
+            <h1 class="text-center">{% trans %}Besoin d'un logement ?{% endtrans %}</h1>
             <p class="text-center">
-                Expliquez-moi votre besoin en remplissant le formulaire ci-dessous,
-                je vous contacterai dans les plus brefs délais après réception de votre message!
+                {% trans %}Expliquez-moi votre besoin en remplissant le formulaire ci-dessous,
+                je vous contacterai dans les plus brefs délais après réception de votre message!{% endtrans %}
             </p>
         </div>
         <!-- form area -->
@@ -59,7 +59,7 @@
                     {{form_widget(form.message)}}
                     {{form_label(form.message)}}
                 </div>
-                <button type="submit" class="btn btn-prim"><i class="bi bi-send"></i> Envoyer</button>
+                <button type="submit" class="btn btn-prim"><i class="bi bi-send"></i> {% trans %}Envoyer{% endtrans %}</button>
             {{form_end(form)}}
         </div>
     </div>

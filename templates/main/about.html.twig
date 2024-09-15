@@ -1,13 +1,13 @@
 {% extends('base.html.twig') %}
 
-{% block title %}About{% endblock %}
+{% block title %}{% trans %}À Propos{% endtrans %}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?"/>
-    <meta property="og:title" content="About" />
+    <meta name="description" content="{% trans %}Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?{% endtrans %}"/>
+    <meta property="og:title" content="{% trans %}À Propos{% endtrans %}" />
     <meta property="og:url" content="https://www.jess-relocation.com/" />
     <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
-    <meta property="og:description" content="Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?" />
+    <meta property="og:description" content="{% trans %}Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?{% endtrans %}" />
     <meta property="og:site_name" content="jess-relocation" />
     <meta property="og:type" content="website" />
 {% endblock %}
@@ -24,18 +24,18 @@
                 <div class="wow animate__animated animate__shakeX">
                     <h1>Jessica Gérold-Householder</h1>
                     <p>
-                        Lyonnaise d’adoption depuis plus de 15 ans,
+                        {% trans %}Lyonnaise d’adoption depuis plus de 15 ans,
                         je connais maintenant tous les recoins de ma jolie ville.
                         Je saurai vous accompagner selon votre situation personnelle,
                         familiale mais aussi professionnelle. Mariée à un américain depuis 15 ans,
                         je connais le stress et les difficultés liées à une expatriation
-                        et saurai vous rassurer dans ce grand bouleversement.
+                        et saurai vous rassurer dans ce grand bouleversement.{% endtrans %}
                     </p>
 
                     <div>
-                        <a href="https://www.instagram.com/viensjteloge/" target="_blank" title="Retrouvez-moi sur Insta" class="about-icone-link"><i class="bi bi-instagram about-icone" style="color: orangered"></i></a>
-                        <a href="https://www.tiktok.com/@viensjteloge" target="_blank" title="Je vous met fréquemment du contenu TikTok" class="about-icone-link"><i class="bi bi-tiktok about-icone" style="color: black"></i></a>
-                        <a href="https://www.linkedin.com/in/jessica-g%C3%A9rold-householder-a92655a4/" target="_blank" title="N'hésitez pas à me suivre sur LinkedIN" class="about-icone-link"><i class="bi bi-linkedin about-icone" style="color: #0e76a8"></i></a>
+                        <a href="https://www.instagram.com/viensjteloge/" target="_blank" title="{% trans %}Retrouvez-moi sur Insta{% endtrans %}" class="about-icone-link"><i class="bi bi-instagram about-icone" style="color: orangered"></i></a>
+                        <a href="https://www.tiktok.com/@viensjteloge" target="_blank" title="{% trans %}Je vous met fréquemment du contenu TikTok{% endtrans %}" class="about-icone-link"><i class="bi bi-tiktok about-icone" style="color: black"></i></a>
+                        <a href="https://www.linkedin.com/in/jessica-g%C3%A9rold-householder-a92655a4/" target="_blank" title="{% trans %}N'hésitez pas à me suivre sur LinkedIN{% endtrans %}" class="about-icone-link"><i class="bi bi-linkedin about-icone" style="color: #0e76a8"></i></a>
                     </div>
                 </div>
                 
@@ -48,17 +48,17 @@
         <!-- Lyon -->
         <section class="row mb-2">
             <div class="col-12 text-center">
-                <h1 class="text-center">Une idée d'appart à Lyon</h1>
+                <h1 class="text-center">{% trans %}Une idée d'apparts à Lyon{% endtrans %}</h1>
 
                 <div class="row">
                     <div class="col-12 col-md-4 mb-1">
-                        <img src="{{asset('assets/img/app-1.jpg')}}" alt="Appartement" class="img-fluid">
+                        <img src="{{asset('assets/img/app-1.jpg')}}" alt="Appart" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-4 mb-1">
-                        <img src="{{asset('assets/img/app-2.jpg')}}" alt="Appartement" class="img-fluid">
+                        <img src="{{asset('assets/img/app-2.jpg')}}" alt="Appart" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-4 mb-1">
-                        <img src="{{asset('assets/img/app-3.jpg')}}" alt="Appartement" class="img-fluid">
+                        <img src="{{asset('assets/img/app-3.jpg')}}" alt="Appart" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
     <!-- appointment -->
     <section class="row banner">
         <div class="col-12 text-center">
-            <h1>Vous pouvez également prendre <a class="btn btn-prim wow animate__animated animate__flash" style="font-size: 20px;" href="{{path('app_appointment')}}" title="Cliquez pour prendre rendez-vous avec Jessica">RENDEZ-VOUS <i class="bi bi-calendar2-event"></i></a></h1>
+            <h1>{% trans %}Vous pouvez également prendre{% endtrans %} <a class="btn btn-prim wow animate__animated animate__flash" style="font-size: 20px;" href="{{path('app_appointment')}}" title="{% trans %}Cliquez pour prendre rendez-vous avec Jessica{% endtrans %}">{% trans %}RENDEZ-VOUS{% endtrans %} <i class="bi bi-calendar2-event"></i></a></h1>
         </div>
     </section>
 </main>

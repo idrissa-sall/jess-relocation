@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Businesses Services{% endblock %}
+{% block title %}{% trans %}Services pour entreprises{% endtrans %}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Découvrez mes services pour les entreprises."/>
-    <meta property="og:title" content="Businesses Services" />
+    <meta name="description" content="{% trans %}Découvrez mes services pour les entreprises.{% endtrans %}"/>
+    <meta property="og:title" content="{% trans %}Services pour entreprises{% endtrans %}" />
     <meta property="og:url" content="https://www.jess-relocation.com/" />
     <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
-    <meta property="og:description" content="Découvrez mes services pour les entreprises." />
+    <meta property="og:description" content="{% trans %}Découvrez mes services pour les entreprises.{% endtrans %}" />
     <meta property="og:site_name" content="jess-relocation" />
     <meta property="og:type" content="website" />
 {% endblock %}
@@ -21,10 +21,10 @@
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center">Vous êtes une entreprise et souhaitez trouver <br> un logement pour vos salariés à Lyon ?</h1>
+                <h1 class="text-center">{% trans %}Vous êtes une entreprise et souhaitez trouver{% endtrans %} <br> {% trans %}un logement pour vos salariés à Lyon ?{% endtrans %}</h1>
                 <p class="text-center">
-                    Je permets à vos talents, en mutation ou nouvelle embauche, d'arriver
-                    sereinement à Lyon et dans sa métropole.
+                    {% trans %}Je permets à vos talents, en mutation ou nouvelle embauche, d'arriver
+                    sereinement à Lyon et dans sa métropole.{% endtrans %}
                 </p>
             </div>
         </div>
@@ -34,7 +34,7 @@
     <section class="row banner wow animate__animated animate__backInLeft">
         <div class="col-12 col-md-8 d-flex align-items-center text-center text-md-start">
             <div>
-                <div class="fw-bold" style="font-size: 40px">Les entreprises qui m'ont fait confiance <i class="bi bi-dash-lg"></i></div>
+                <div class="fw-bold" style="font-size: 40px">{% trans %}Les entreprises qui m'ont fait confiance{% endtrans %} <i class="bi bi-dash-lg"></i></div>
                 <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur, iste quos animi quaerat, illum blanditiis harum voluptates assumenda, voluptas impedit tempora porro ducimus adipisci consectetur deleniti et ipsa debitis!</p> -->
             </div>
         </div>
@@ -48,33 +48,33 @@
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center">Mes services</h1>
+                <h1 class="text-center">{% trans %}Mes services{% endtrans %}</h1>
             </div>
     
             <div class="col-12 col-md-4 mt-1">
                 <div class="card service-card">
                     <span><i class="bi bi-chat service-card-icon"></i></span>
-                    <h5 class="service-card-h">Evaluation du besoin</h5>
+                    <h5 class="service-card-h">{% trans %}Evaluation du besoin{% endtrans %}</h5>
                     <p>
-                        Evaluation des besoins et établissement d'un cahier des charges en adéquation avec le marché locatif <br> &nbsp;
+                        {% trans %}Evaluation des besoins et établissement d'un cahier des charges en adéquation avec le marché locatif{% endtrans %} <br> &nbsp;
                     </p>
                 </div>
             </div>
             <div class="col-12 col-md-4 mt-1">
                 <div class="card service-card">
                     <span><i class="bi bi-folder service-card-icon"></i></span>
-                    <h5 class="service-card-h">Constitution du dossier</h5>
+                    <h5 class="service-card-h">{% trans %}Constitution du dossier{% endtrans %}</h5>
                     <p>
-                        Gestion de votre dossier et de celui de vos garants, de son établissement à sa transmission aux agences <br> &nbsp;
+                        {% trans %}Gestion de votre dossier et de celui de vos garants, de son établissement à sa transmission aux agences{% endtrans %} <br> &nbsp;
                     </p>
                 </div>
             </div>
             <div class="col-12 col-md-4 mt-1">
                 <div class="card service-card">
                     <span><i class="bi bi-search service-card-icon"></i></span>
-                    <h5 class="service-card-h">Recherche de logement</h5>
+                    <h5 class="service-card-h">{% trans %}Recherche de logement{% endtrans %}</h5>
                     <p>
-                        Recherche proactive grâce à mon réseau d'agents partenaires, ma veille active auprès des particuliers et ma réactivité sur le terrain
+                        {% trans %}Recherche proactive grâce à mon réseau d'agents partenaires, ma veille active auprès des particuliers et ma réactivité sur le terrain{% endtrans %}
                     </p>
                 </div>
             </div>
@@ -83,39 +83,39 @@
 
     <!-- steps section -->
     <section class="row banner mt-3 wow animate__animated animate__backInLeft">
-        <h1 class="text-center mb-4">Les étapes de notre travail ensemble</h1>
+        <h1 class="text-center mb-4">{% trans %}Les étapes de notre travail ensemble{% endtrans %}</h1>
         <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus rem eligendi, eius dolorum iure nostrum ipsum pariatur quas delectus nisi qui rerum, eos dolorem, perferendis labore illo dicta. Facilis, rerum?</p> -->
         <div class="col-12 col-md-6">   
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Call découverte permettant de cerner vos attentes</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Call découverte permettant de cerner vos attentes{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolores eum, totam sint numquam sapiente deleniti, illum architecto suscipit, libero aliquam. Vero voluptate praesentium, quod necessitatibus veniam unde iste earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel aliquam tempora quae facere, nisi deleniti eveniet eius dolorum ipsum? Ut repellendus blanditiis harum distinctio recusandae itaque quos, sequi veritatis.</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Gestion de votre dossier dans le respect de la RGPD</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Gestion de votre dossier dans le respect de la RGPD{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Adaptation de votre dossier aux exigences des agences</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Adaptation de votre dossier aux exigences des agences{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Recherche de votre bien en collaboration avec mes contact en agences et auprès des particuliers</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Recherche de votre bien en collaboration avec mes contact en agences et auprès des particuliers{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Visites sur le terrain</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Visites sur le terrain{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Mise à disposition des photos et vidéos détaillées des biens: je suis vos yeux sur le terrain</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Mise à disposition des photos et vidéos détaillées des biens: je suis vos yeux sur le terrain{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Dépôt de votre dossier</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Dépôt de votre dossier{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
             <div class="individual-services-step-list">
-                <h5><i class="bi bi-check-square-fill"></i> Accompagnement à la relecture du bail, gestion de l'état des lieux, mise en service du logement selon la formule choisie</h5>
+                <h5><i class="bi bi-check-square-fill"></i> {% trans %}Accompagnement à la relecture du bail, gestion de l'état des lieux, mise en service du logement selon la formule choisie{% endtrans %}</h5>
                 <!-- <div class="individual-services-step-list-description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iure, neque odio similique est doloribus debitis perspiciatis vero praesentium iusto, tenetur impedit consequatur beatae aspernatur libero quibusdam pariatur. Aspernatur, id!</div> -->
             </div>
         </div>

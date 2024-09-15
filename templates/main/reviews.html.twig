@@ -1,13 +1,13 @@
 {% extends('base.html.twig') %}
 
-{% block title %}Reviews{% endblock %}
+{% block title %}{% trans %}Avis{% endtrans %}{% endblock %}
 
 {% block metatags %}
-    <meta name="description" content="Jetez un coup d'œil aux avis sur Jess Relocation."/>
-    <meta property="og:title" content="Reviews" />
+    <meta name="description" content="{% trans %}Jetez un coup d'œil aux avis sur Jess Relocation.{% endtrans %}"/>
+    <meta property="og:title" content="{% trans %}Avis{% endtrans %}" />
     <meta property="og:url" content="https://www.jess-relocation.com/" />
     <meta property="og:image" content="{{asset('assets/img/logo-social-media.jpg')}}" />
-    <meta property="og:description" content="Jetez un coup d'œil aux avis sur Jess Relocation." />
+    <meta property="og:description" content="{% trans %}Jetez un coup d'œil aux avis sur Jess Relocation.{% endtrans %}" />
     <meta property="og:site_name" content="jess-relocation" />
     <meta property="og:type" content="website" />
 {% endblock %}
@@ -16,7 +16,7 @@
 <main class="container-fluid">
     <section class="row">
         <div class="col-12 text-center banner">
-            <h1>Jetez un coup d'œil aux avis sur Jess Relocation</h1>
+            <h1>{% trans %}Jetez un coup d'œil aux avis sur Jess Relocation{% endtrans %}</h1>
         </div>
         
         <div class="col-12 my-5">
@@ -44,7 +44,7 @@
                             </div>
                         {% endfor %}
                     {% else %}
-                        <h4 class="text-center">Aucun avis pour le moment, n'hésitez pas à en laisser</h4>
+                        <h4 class="text-center">{% trans %}Aucun avis pour le moment, n'hésitez pas à en laisser{% endtrans %}</h4>
                     {% endif %}
 
                     <div class="col-12 mt-2">
