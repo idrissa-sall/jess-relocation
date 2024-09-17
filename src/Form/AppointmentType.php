@@ -62,7 +62,7 @@ class AppointmentType extends AbstractType
                 'required'  => true,
                 'attr'      => [
                     'class'         => 'form-control',
-                    'placeholder'   => 'Numéro de téléphone',
+                    'placeholder'   => 'Numéro de téléphone (avec indicatif si hors France)',
                 ],
                 'constraints'   => [
                     new NotBlank([

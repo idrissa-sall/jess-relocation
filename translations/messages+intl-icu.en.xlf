@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="jQLTbNM" resname="Merci d'avoir soumis votre avis, après vérification, il sera publié.">
+        <source>Merci d'avoir soumis votre avis, après vérification, il sera publié.</source>
+        <target>Thank you for submitting your review, it will be published after verification.</target>
+      </trans-unit>
+      <trans-unit id="2VZRX4U" resname="Votre message n'a pas pu être publié, merci de vérifier votre saisie">
+        <source>Votre message n'a pas pu être publié, merci de vérifier votre saisie</source>
+        <target>Your message could not be published, please check your input.</target>
+      </trans-unit>
+      <trans-unit id="IaYlJ.e" resname="Un rendez-vous est déjà prevue pour la date et l'heure que vous avez sélectionné, merci de modifier votre saisie.">
+        <source>Un rendez-vous est déjà prevue pour la date et l'heure que vous avez sélectionné, merci de modifier votre saisie.</source>
+        <target>An appointment is already scheduled for the date and time you selected, please modify your input.</target>
+      </trans-unit>
+      <trans-unit id="sqALlnL" resname="Votre demande à bien été pris en compte, à bientôt!">
+        <source>Votre demande à bien été pris en compte, à bientôt!</source>
+        <target>Your request has been successfully received, see you soon!</target>
+      </trans-unit>
+      <trans-unit id="hqWHDZR" resname="Votre demande de rendez-vous n'a pas pu aboutir, merci de verifier votre saisie">
+        <source>Votre demande de rendez-vous n'a pas pu aboutir, merci de verifier votre saisie</source>
+        <target>Your appointment request could not be processed, please check your input</target>
+      </trans-unit>
+      <trans-unit id="xub1etO" resname="Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais">
+        <source>Votre message à bien été transmis à Jess-Relocation, vous aurez une réponse dans les plus brefs délais</source>
+        <target>Your message has been successfully forwarded to Jess-Relocation, you will receive a response as soon as possible</target>
+      </trans-unit>
+      <trans-unit id="Ai4w4gn" resname="À Propos">
+        <source>À Propos</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="CTuJqsL" resname="Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?">
+        <source>Vous souhaitez avoir des informations sur Jessica et prendre rendez-vous ?</source>
+        <target>Would you like to get information about Jessica and schedule an appointment ?</target>
+      </trans-unit>
+      <trans-unit id="q6WQ5u7" resname="Lyonnaise d’adoption depuis plus de 15 ans,&#10;                        je connais maintenant tous les recoins de ma jolie ville.&#10;                        Je saurai vous accompagner selon votre situation personnelle,&#10;                        familiale mais aussi professionnelle. Mariée à un américain depuis 15 ans,&#10;                        je connais le stress et les difficultés liées à une expatriation&#10;                        et saurai vous rassurer dans ce grand bouleversement.">
+        <source>Lyonnaise d’adoption depuis plus de 15 ans,
+                        je connais maintenant tous les recoins de ma jolie ville.
+                        Je saurai vous accompagner selon votre situation personnelle,
+                        familiale mais aussi professionnelle. Mariée à un américain depuis 15 ans,
+                        je connais le stress et les difficultés liées à une expatriation
+                        et saurai vous rassurer dans ce grand bouleversement.</source>
+        <target>Having made Lyon my home for over 15 years, I now know every corner of my beautiful city. I will be able to support you according to your personal, family, and professional situation. Married to an American for 15 years, I understand the stress and challenges of relocating abroad and will be able to reassure you during this major life change.</target>
+      </trans-unit>
+      <trans-unit id="rwB1yR6" resname="Retrouvez-moi sur Insta">
+        <source>Retrouvez-moi sur Insta</source>
+        <target>Find me on Insta</target>
+      </trans-unit>
+      <trans-unit id="yUEV8P6" resname="Je vous met fréquemment du contenu TikTok">
+        <source>Je vous met fréquemment du contenu TikTok</source>
+        <target>I frequently share content on TikTok</target>
+      </trans-unit>
+      <trans-unit id="gFeInz2" resname="N'hésitez pas à me suivre sur LinkedIN">
+        <source>N'hésitez pas à me suivre sur LinkedIN</source>
+        <target>Feel free to follow me on LinkedIn</target>
+      </trans-unit>
+      <trans-unit id="_A1WGF5" resname="Une idée d'apparts à Lyon">
+        <source>Une idée d'apparts à Lyon</source>
+        <target>An idea for apartments in Lyon</target>
+      </trans-unit>
+      <trans-unit id=".F74psk" resname="Vous pouvez également prendre">
+        <source>Vous pouvez également prendre</source>
+        <target>You can also take</target>
+      </trans-unit>
+      <trans-unit id=".DMrN4T" resname="Cliquez pour prendre rendez-vous avec Jessica">
+        <source>Cliquez pour prendre rendez-vous avec Jessica</source>
+        <target>Click to schedule an appointment with Jessica</target>
+      </trans-unit>
+      <trans-unit id="BVfoyFm" resname="RENDEZ-VOUS">
+        <source>RENDEZ-VOUS</source>
+        <target>APPOINTMENT</target>
+      </trans-unit>
+      <trans-unit id="rRIymNr" resname="Prendre rendez-vous">
+        <source>Prendre rendez-vous</source>
+        <target>Make an appointment</target>
+      </trans-unit>
+      <trans-unit id="C3QukEB" resname="Vous pouvez directement prendre rendez-vous depuis le site internet.">
+        <source>Vous pouvez directement prendre rendez-vous depuis le site internet.</source>
+        <target>You can directly schedule an appointment through the website.</target>
+      </trans-unit>
+      <trans-unit id="B5u_omP" resname="Vous pouvez prendre rendez-vous via le formulaire">
+        <source>Vous pouvez prendre rendez-vous via le formulaire</source>
+        <target>You can schedule an appointment using the form</target>
+      </trans-unit>
+      <trans-unit id="eQdSCfK" resname="Envoyer">
+        <source>Envoyer</source>
+        <target>Send</target>
+      </trans-unit>
+      <trans-unit id="XQk4d8S" resname="Services pour entreprises">
+        <source>Services pour entreprises</source>
+        <target>Business Services</target>
+      </trans-unit>
+      <trans-unit id="HwUES1Z" resname="Découvrez mes services pour les entreprises.">
+        <source>Découvrez mes services pour les entreprises.</source>
+        <target>Discover my services for businesses.</target>
+      </trans-unit>
+      <trans-unit id="rF01jLs" resname="Vous êtes une entreprise et souhaitez trouver">
+        <source>Vous êtes une entreprise et souhaitez trouver</source>
+        <target>You are a business and wish to find</target>
+      </trans-unit>
+      <trans-unit id="1dQ13jD" resname="un logement pour vos salariés à Lyon ?">
+        <source>un logement pour vos salariés à Lyon ?</source>
+        <target>accommodation for your employees in Lyon ?</target>
+      </trans-unit>
+      <trans-unit id="_w.KgCL" resname="Je permets à vos talents, en mutation ou nouvelle embauche, d'arriver&#10;                    sereinement à Lyon et dans sa métropole.">
+        <source>Je permets à vos talents, en mutation ou nouvelle embauche, d'arriver
+                    sereinement à Lyon et dans sa métropole.</source>
+        <target>I help your talents, whether relocating or newly hired, to arrive in Lyon and its metropolitan area with peace of mind.</target>
+      </trans-unit>
+      <trans-unit id="PuHBD2q" resname="Les entreprises qui m'ont fait confiance">
+        <source>Les entreprises qui m'ont fait confiance</source>
+        <target>Companies that have trusted me</target>
+      </trans-unit>
+      <trans-unit id="aKiqhOT" resname="Mes services">
+        <source>Mes services</source>
+        <target>My services</target>
+      </trans-unit>
+      <trans-unit id="OEvLDX1" resname="Evaluation du besoin">
+        <source>Evaluation du besoin</source>
+        <target>Need assessment</target>
+      </trans-unit>
+      <trans-unit id="gFtnOm3" resname="Evaluation des besoins et établissement d'un cahier des charges en adéquation avec le marché locatif">
+        <source>Evaluation des besoins et établissement d'un cahier des charges en adéquation avec le marché locatif</source>
+        <target>Needs assessment and preparation of a specifications document in line with the rental market</target>
+      </trans-unit>
+      <trans-unit id="HDDa1Dk" resname="Constitution du dossier">
+        <source>Constitution du dossier</source>
+        <target>Preparation of the file</target>
+      </trans-unit>
+      <trans-unit id=".K0NsaL" resname="Gestion de votre dossier et de celui de vos garants, de son établissement à sa transmission aux agences">
+        <source>Gestion de votre dossier et de celui de vos garants, de son établissement à sa transmission aux agences</source>
+        <target>Management of your file and that of your guarantors, from its preparation to its submission to agencies</target>
+      </trans-unit>
+      <trans-unit id="_PumOTg" resname="Recherche de logement">
+        <source>Recherche de logement</source>
+        <target>Accommodation search</target>
+      </trans-unit>
+      <trans-unit id="eXZGGT6" resname="Recherche proactive grâce à mon réseau d'agents partenaires, ma veille active auprès des particuliers et ma réactivité sur le terrain">
+        <source>Recherche proactive grâce à mon réseau d'agents partenaires, ma veille active auprès des particuliers et ma réactivité sur le terrain</source>
+        <target>Proactive search through my network of partner agents, active monitoring of listings, and responsiveness on the ground</target>
+      </trans-unit>
+      <trans-unit id="d6bakgH" resname="Les étapes de notre travail ensemble">
+        <source>Les étapes de notre travail ensemble</source>
+        <target>The steps of our work together</target>
+      </trans-unit>
+      <trans-unit id="xkPyV0N" resname="Call découverte permettant de cerner vos attentes">
+        <source>Call découverte permettant de cerner vos attentes</source>
+        <target>Discovery call to understand your needs</target>
+      </trans-unit>
+      <trans-unit id="wfgUK62" resname="Gestion de votre dossier dans le respect de la RGPD">
+        <source>Gestion de votre dossier dans le respect de la RGPD</source>
+        <target>Management of your file in compliance with GDPR</target>
+      </trans-unit>
+      <trans-unit id="_cKpAqm" resname="Adaptation de votre dossier aux exigences des agences">
+        <source>Adaptation de votre dossier aux exigences des agences</source>
+        <target>Adapting your file to the agencies' requirements</target>
+      </trans-unit>
+      <trans-unit id="m4wdMVY" resname="Recherche de votre bien en collaboration avec mes contact en agences et auprès des particuliers">
+        <source>Recherche de votre bien en collaboration avec mes contact en agences et auprès des particuliers</source>
+        <target>Searching for your property in collaboration with my contacts at agencies and with private individuals</target>
+      </trans-unit>
+      <trans-unit id="ARtxEBB" resname="Visites sur le terrain">
+        <source>Visites sur le terrain</source>
+        <target>Site visits</target>
+      </trans-unit>
+      <trans-unit id="BCohVaK" resname="Mise à disposition des photos et vidéos détaillées des biens: je suis vos yeux sur le terrain">
+        <source>Mise à disposition des photos et vidéos détaillées des biens: je suis vos yeux sur le terrain</source>
+        <target>Provision of detailed photos and videos of properties: I am your eyes on the ground</target>
+      </trans-unit>
+      <trans-unit id="wkRI9d." resname="Dépôt de votre dossier">
+        <source>Dépôt de votre dossier</source>
+        <target>Submission of your file</target>
+      </trans-unit>
+      <trans-unit id="5qpm4p." resname="Accompagnement à la relecture du bail, gestion de l'état des lieux, mise en service du logement selon la formule choisie">
+        <source>Accompagnement à la relecture du bail, gestion de l'état des lieux, mise en service du logement selon la formule choisie</source>
+        <target>Assistance with lease review, management of the inventory, and setup of the property according to the chosen option</target>
+      </trans-unit>
+      <trans-unit id="K1w9JnI" resname="Contact">
+        <source>Contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="AU6kqE2" resname="Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais.">
+        <source>Vous pouvez me contacter et m'expliquer votre besoin, je vous réponds dans les plus bref délais.</source>
+        <target>You can contact me and explain your needs, and I will respond as quickly as possible.</target>
+      </trans-unit>
+      <trans-unit id="o0vtfl8" resname="Besoin d'un logement ?">
+        <source>Besoin d'un logement ?</source>
+        <target>Need accommodation ?</target>
+      </trans-unit>
+      <trans-unit id="hcoS4yR" resname="Expliquez-moi votre besoin en remplissant le formulaire ci-dessous,&#10;                je vous contacterai dans les plus brefs délais après réception de votre message!">
+        <source>Expliquez-moi votre besoin en remplissant le formulaire ci-dessous,
+                je vous contacterai dans les plus brefs délais après réception de votre message!</source>
+        <target>Explain your needs by filling out the form below, and I will contact you as soon as possible after receiving your message!</target>
+      </trans-unit>
+      <trans-unit id="Nt7aKzP" resname="Viens J'T Loge">
+        <source>Viens J'T Loge</source>
+        <target>Come, I’ll put you up</target>
+      </trans-unit>
+      <trans-unit id="S.mXjcH" resname="Je vous aide à trouver le logement qui vous convient.">
+        <source>Je vous aide à trouver le logement qui vous convient.</source>
+        <target>I help you find the accommodation that suits you.</target>
+      </trans-unit>
+      <trans-unit id="7TZNLcU" resname="Je vous aide à trouver">
+        <source>Je vous aide à trouver</source>
+        <target>I help you find</target>
+      </trans-unit>
+      <trans-unit id="LuoB7X6" resname="le logement qui vous convient">
+        <source>le logement qui vous convient</source>
+        <target>the accommodation that suits you</target>
+      </trans-unit>
+      <trans-unit id="PIT_S6V" resname="J'apporte mon expertise du marché immobilier&#10;                de la métropole lyonnaise aux futurs locataires de ma si jolie ville.">
+        <source>J'apporte mon expertise du marché immobilier
+                de la métropole lyonnaise aux futurs locataires de ma si jolie ville.</source>
+        <target>I bring my expertise in the Lyon metropolitan real estate market to future tenants of my beautiful city.</target>
+      </trans-unit>
+      <trans-unit id="7gwO1WP" resname="Si vous cherchez un accompagnement complet,&#10;                dans la joie et la bonne humeur, vous avez frappé à la bonne porte!">
+        <source>Si vous cherchez un accompagnement complet,
+                dans la joie et la bonne humeur, vous avez frappé à la bonne porte!</source>
+        <target>If you're looking for comprehensive support, with joy and good cheer, you've come to the right place!</target>
+      </trans-unit>
+      <trans-unit id="XDyi7qK" resname="Dynamique, pédagogue et consciente des enjeux quand on quitte tout pour arriver dans une ville parfois inconnue,&#10;                je suis là pour vous aider que vous soyez particuliers, étudiants, professionnels, expats ou étrangers prêts à découvrir la French Touch...">
+        <source>Dynamique, pédagogue et consciente des enjeux quand on quitte tout pour arriver dans une ville parfois inconnue,
+                je suis là pour vous aider que vous soyez particuliers, étudiants, professionnels, expats ou étrangers prêts à découvrir la French Touch...</source>
+        <target>Dynamic, educational, and aware of the challenges when leaving everything behind to move to a sometimes unfamiliar city, I am here to help whether you are an individual, student, professional, expat, or foreigner ready to experience the French Touch...</target>
+      </trans-unit>
+      <trans-unit id="NGKusEY" resname="De l'établissement du cahier des charges de votre recherche à votre entrée dans les lieux,&#10;                vous ne serez jamais seuls!">
+        <source>De l'établissement du cahier des charges de votre recherche à votre entrée dans les lieux,
+                vous ne serez jamais seuls!</source>
+        <target>From setting up the specifications for your search to your move-in, you will never be alone!</target>
+      </trans-unit>
+      <trans-unit id="QCkNHFh" resname="Contactez-moi">
+        <source>Contactez-moi</source>
+        <target>Contact me</target>
+      </trans-unit>
+      <trans-unit id="JvsM6xU" resname="Alors, prêts pour l'aventure ?">
+        <source>Alors, prêts pour l'aventure ?</source>
+        <target>So, ready for the adventure ?</target>
+      </trans-unit>
+      <trans-unit id="jwTQeVK" resname="Vous êtes au bon endroit SI">
+        <source>Vous êtes au bon endroit SI</source>
+        <target>You’re in the right place IF</target>
+      </trans-unit>
+      <trans-unit id="AphA8bA" resname="Vous n’êtes pas sur place">
+        <source>Vous n’êtes pas sur place</source>
+        <target>You are not on-site</target>
+      </trans-unit>
+      <trans-unit id=".iEZoZd" resname="Vous n’avez pas de temps à accorder à votre recherche">
+        <source>Vous n’avez pas de temps à accorder à votre recherche</source>
+        <target>You don't have time to dedicate to your search</target>
+      </trans-unit>
+      <trans-unit id="w0EWFxT" resname="Vous ne connaissez pas le bassin lyonnais et son marché locatif hyper tendu">
+        <source>Vous ne connaissez pas le bassin lyonnais et son marché locatif hyper tendu</source>
+        <target>You are not familiar with the Lyon area and its very tight rental market</target>
+      </trans-unit>
+      <trans-unit id="iJafG8q" resname="Vous voulez profiter de mes contacts en agence">
+        <source>Vous voulez profiter de mes contacts en agence</source>
+        <target>You want to take advantage of my contacts at agencies</target>
+      </trans-unit>
+      <trans-unit id="HpdsMgf" resname="Vous recherchez un accompagnement individualisé, complet dans la bienveillance, l’écoute et le fun">
+        <source>Vous recherchez un accompagnement individualisé, complet dans la bienveillance, l’écoute et le fun</source>
+        <target>You are looking for personalized, comprehensive support with kindness, attentiveness, and a bit of fun</target>
+      </trans-unit>
+      <trans-unit id="_GYwPLL" resname="Avis clients">
+        <source>Avis clients</source>
+        <target>Customer reviews</target>
+      </trans-unit>
+      <trans-unit id="C4ijYI." resname="Aucun avis pour le moment, n'hésitez pas à en laisser">
+        <source>Aucun avis pour le moment, n'hésitez pas à en laisser</source>
+        <target>No reviews yet, feel free to leave one</target>
+      </trans-unit>
+      <trans-unit id="IzPFAdf" resname="Tous les avis">
+        <source>Tous les avis</source>
+        <target>All reviews</target>
+      </trans-unit>
+      <trans-unit id="PK5zwOA" resname="TOUS LES AVIS">
+        <source>TOUS LES AVIS</source>
+        <target>ALL REVIEWS</target>
+      </trans-unit>
+      <trans-unit id="JnfMctf" resname="LAISSER UN AVIS">
+        <source>LAISSER UN AVIS</source>
+        <target>Leave a review</target>
+      </trans-unit>
+      <trans-unit id="FCf727O" resname="Laissez un avis sur Jess Relocation">
+        <source>Laissez un avis sur Jess Relocation</source>
+        <target>Leave a review for Jess Relocation</target>
+      </trans-unit>
+      <trans-unit id="1WZ7y7R" resname="Votre recherche de logement simplifiée">
+        <source>Votre recherche de logement simplifiée</source>
+        <target>Your housing search made simple</target>
+      </trans-unit>
+      <trans-unit id="hLJXBAl" resname="Stop au stress">
+        <source>Stop au stress</source>
+        <target>Stop the stress</target>
+      </trans-unit>
+      <trans-unit id="GlsjIUI" resname="Finies les heures à éplucher les annonces, à tenter de joindre une agence, à prévoir les visites.">
+        <source>Finies les heures à éplucher les annonces, à tenter de joindre une agence, à prévoir les visites.</source>
+        <target>Say goodbye to hours spent sifting through listings, trying to contact agencies, and scheduling viewings.</target>
+      </trans-unit>
+      <trans-unit id=".3hpWqT" resname="Adieu la paperasse">
+        <source>Adieu la paperasse</source>
+        <target>Goodbye paperwork</target>
+      </trans-unit>
+      <trans-unit id="IrGXFp6" resname="Je gère votre dossier de l'établissement de votre cahier des charges à la signature du bail.">
+        <source>Je gère votre dossier de l'établissement de votre cahier des charges à la signature du bail.</source>
+        <target>I handle your file from drafting the specifications to signing the lease.</target>
+      </trans-unit>
+      <trans-unit id="zUeus6c" resname="Accès à des offres exclusives">
+        <source>Accès à des offres exclusives</source>
+        <target>Access to exclusive offers</target>
+      </trans-unit>
+      <trans-unit id="A3iemXE" resname="Grâce à mes contacts en agences bénéficiez d'un accès prioritaire sur certaines offres de location.">
+        <source>Grâce à mes contacts en agences bénéficiez d'un accès prioritaire sur certaines offres de location.</source>
+        <target>Thanks to my contacts at agencies, enjoy priority access to certain rental offers.</target>
+      </trans-unit>
+      <trans-unit id="0j55tCb" resname="1km à pied ça use">
+        <source>1km à pied ça use</source>
+        <target>1 kilometer on foot wears you out</target>
+      </trans-unit>
+      <trans-unit id="rvZ8hgv" resname="J'organise et visite les appartements et vous propose un retour détaillé via photos et vidéos.">
+        <source>J'organise et visite les appartements et vous propose un retour détaillé via photos et vidéos.</source>
+        <target>I organize and visit the apartments, and provide you with detailed feedback through photos and videos.</target>
+      </trans-unit>
+      <trans-unit id="oqKywfM" resname="Services pour particuliers">
+        <source>Services pour particuliers</source>
+        <target>Services for individuals</target>
+      </trans-unit>
+      <trans-unit id="zqTlOp8" resname="Découvrez mes services pour les particuliers.">
+        <source>Découvrez mes services pour les particuliers.</source>
+        <target>Discover my services for individuals.</target>
+      </trans-unit>
+      <trans-unit id="hflnh9H" resname="Vous déménagez dans la métropole de Lyon ?">
+        <source>Vous déménagez dans la métropole de Lyon ?</source>
+        <target>You are moving to the Lyon metropolitan area ?</target>
+      </trans-unit>
+      <trans-unit id="3EGY9nO" resname="Pour que ce changement de vie ne soit pas synonyme de stress inutile,&#10;                    confiez votre recherche d'appartement à une personne connaissant parfaitement&#10;                    ce secteur et son marché locatif ultra tendu.">
+        <source>Pour que ce changement de vie ne soit pas synonyme de stress inutile,
+                    confiez votre recherche d'appartement à une personne connaissant parfaitement
+                    ce secteur et son marché locatif ultra tendu.</source>
+        <target>To ensure that this life change doesn't mean unnecessary stress, entrust your apartment search to someone who knows the area and its highly competitive rental market perfectly.</target>
+      </trans-unit>
+      <trans-unit id="trs0xhV" resname="Mentions légales et politique de confidentialité">
+        <source>Mentions légales et politique de confidentialité</source>
+        <target>Legal notice and privacy policy</target>
+      </trans-unit>
+      <trans-unit id="zOnAobl" resname="Mentions légales">
+        <source>Mentions légales</source>
+        <target>Legal notice</target>
+      </trans-unit>
+      <trans-unit id="U7RKoF3" resname="Éditeur du site">
+        <source>Éditeur du site</source>
+        <target>Site publisher</target>
+      </trans-unit>
+      <trans-unit id="xwTynCy" resname="Le présent site est édité par Jessica Gérold-Householder.">
+        <source>Le présent site est édité par Jessica Gérold-Householder.</source>
+        <target>This site is published by Jessica Gérold-Householder.</target>
+      </trans-unit>
+      <trans-unit id="eeXPIN4" resname="Adresse">
+        <source>Adresse</source>
+        <target>Address</target>
+      </trans-unit>
+      <trans-unit id="ABBh7Zo" resname="Siret:">
+        <source>Siret:</source>
+        <target>Siret:</target>
+      </trans-unit>
+      <trans-unit id="F1B9z4R" resname="Email:">
+        <source>Email:</source>
+        <target>E-mail:</target>
+      </trans-unit>
+      <trans-unit id="zExCS1c" resname="Téléphone">
+        <source>Téléphone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="3HTYyzz" resname="Hébergeur">
+        <source>Hébergeur</source>
+        <target>Host</target>
+      </trans-unit>
+      <trans-unit id="MoGnnxP" resname="Le site internet https://www.jess-relocation.com est hébergé chez 1&amp;amp;1 Ionos.">
+        <source>Le site internet https://www.jess-relocation.com est hébergé chez 1&amp;amp;1 Ionos.</source>
+        <target><![CDATA[The website https://www.jess-relocation.com is hosted at 1&amp;1 Ionos.]]></target>
+      </trans-unit>
+      <trans-unit id="0xns7kQ" resname="Adresse:">
+        <source>Adresse:</source>
+        <target>Address:</target>
+      </trans-unit>
+      <trans-unit id="jWTIDqZ" resname="Téléphone:">
+        <source>Téléphone:</source>
+        <target>Phone:</target>
+      </trans-unit>
+      <trans-unit id="s0Y5g02" resname="Propriété intellectuelle">
+        <source>Propriété intellectuelle</source>
+        <target>Intellectual property</target>
+      </trans-unit>
+      <trans-unit id="WWlUt7M" resname="Le contenu présent sur https://www.jess-relocation.com est la propriété exclusive de Jessica Gérold-Householder,&#10;                à l’exception des logos et marques des agences immobilières, et des réseaux sociaux ainsi que  certaines images utilisées notamment&#10;                sur les bannières et les pages présentant les services de Jessica Gérold-Householder, qui proviennent de banques d'images.">
+        <source>Le contenu présent sur https://www.jess-relocation.com est la propriété exclusive de Jessica Gérold-Householder,
+                à l’exception des logos et marques des agences immobilières, et des réseaux sociaux ainsi que  certaines images utilisées notamment
+                sur les bannières et les pages présentant les services de Jessica Gérold-Householder, qui proviennent de banques d'images.</source>
+        <target>"The content on https://www.jess-relocation.com is the exclusive property of Jessica Gérold-Householder, except for the logos and trademarks of real estate agencies and social networks, as well as certain images used, particularly on banners and pages presenting the services of Jessica Gérold-Householder, which come from stock image banks.</target>
+      </trans-unit>
+      <trans-unit id="EkAbUP9" resname="Toute reproduction, modification ou distribution des ses éléments est strictement interdit sans l'accord de Jessica Gérold-Householder, à l’exception&#10;                des images provenant de banques d'images.">
+        <source>Toute reproduction, modification ou distribution des ses éléments est strictement interdit sans l'accord de Jessica Gérold-Householder, à l’exception
+                des images provenant de banques d'images.</source>
+        <target>Any reproduction, modification, or distribution of these elements is strictly prohibited without the permission of Jessica Gérold-Householder, except for images sourced from stock image banks.</target>
+      </trans-unit>
+      <trans-unit id="_HO33Mj" resname="Politique de confidentialité">
+        <source>Politique de confidentialité</source>
+        <target>Privacy Policy</target>
+      </trans-unit>
+      <trans-unit id="emo8aR5" resname="Données collectées">
+        <source>Données collectées</source>
+        <target>Data collected</target>
+      </trans-unit>
+      <trans-unit id="kPaBsbn" resname="Les données personnelles sont collectées essentiellement à partir:">
+        <source>Les données personnelles sont collectées essentiellement à partir:</source>
+        <target>Personal data is collected primarily from:</target>
+      </trans-unit>
+      <trans-unit id="TyvxWIP" resname="Du formulaire de contact">
+        <source>Du formulaire de contact</source>
+        <target>From the contact form</target>
+      </trans-unit>
+      <trans-unit id="aSKlLzo" resname="Du formulaire de prise de rendez-vous">
+        <source>Du formulaire de prise de rendez-vous</source>
+        <target>From the appointment scheduling form</target>
+      </trans-unit>
+      <trans-unit id="_wIlGqR" resname="Certaines données liées à votre trafic sur le site sont également collectées.">
+        <source>Certaines données liées à votre trafic sur le site sont également collectées.</source>
+        <target>Some data related to your traffic on the site is also collected.</target>
+      </trans-unit>
+      <trans-unit id="g6ReIlM" resname="Utilisation de vos données">
+        <source>Utilisation de vos données</source>
+        <target>Use of your data</target>
+      </trans-unit>
+      <trans-unit id="67SSxK0" resname="Nous utilisons vos données pour:">
+        <source>Nous utilisons vos données pour:</source>
+        <target>We use your data to:</target>
+      </trans-unit>
+      <trans-unit id=".UvWHT9" resname="La prise de contact dans le cas de rendez-vous ou de demande d'informations">
+        <source>La prise de contact dans le cas de rendez-vous ou de demande d'informations</source>
+        <target>Contacting you in the case of appointments or information requests</target>
+      </trans-unit>
+      <trans-unit id="wgX_WHA" resname="Nous assurer de l'ergonomie du site sur le matériel que vous utiliser pour y accéder.">
+        <source>Nous assurer de l'ergonomie du site sur le matériel que vous utiliser pour y accéder.</source>
+        <target>Ensuring the site's usability on the device you use to access it.</target>
+      </trans-unit>
+      <trans-unit id="6JUcTU0" resname="Vos droits">
+        <source>Vos droits</source>
+        <target>Your rights</target>
+      </trans-unit>
+      <trans-unit id="RomWusz" resname="Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 et du Règlement (UE) 2016/679.&#10;                Vous avez les droits d’accès, de rectification, de portabilité, d’effacement de vos données, ou de limitation du traitement.">
+        <source>Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 et du Règlement (UE) 2016/679.
+                Vous avez les droits d’accès, de rectification, de portabilité, d’effacement de vos données, ou de limitation du traitement.</source>
+        <target>In accordance with the 'Informatique et Libertés' law of January 6, 1978, and Regulation (EU) 2016/679, you have the rights to access, rectify, port, erase your data, or limit its processing.</target>
+      </trans-unit>
+      <trans-unit id="FBOV6zV" resname="Cookies">
+        <source>Cookies</source>
+        <target>Cookies</target>
+      </trans-unit>
+      <trans-unit id="lIiM6rG" resname="Ce site utilise des cookies pour améliorer l'expérience utilisateur avec votre consentement.">
+        <source>Ce site utilise des cookies pour améliorer l'expérience utilisateur avec votre consentement.</source>
+        <target>This site uses cookies to enhance user experience with your consent.</target>
+      </trans-unit>
+      <trans-unit id="Pn7xwmS" resname="Avis">
+        <source>Avis</source>
+        <target>Reviews</target>
+      </trans-unit>
+      <trans-unit id="Nkf7PcQ" resname="Jetez un coup d'œil aux avis sur Jess Relocation.">
+        <source>Jetez un coup d'œil aux avis sur Jess Relocation.</source>
+        <target>Take a look at the reviews for Jess Relocation.</target>
+      </trans-unit>
+      <trans-unit id="Kj0XyRn" resname="Jetez un coup d'œil aux avis sur Jess Relocation">
+        <source>Jetez un coup d'œil aux avis sur Jess Relocation</source>
+        <target>Take a look at the reviews for Jess Relocation</target>
+      </trans-unit>
+      <trans-unit id="Q27vie7" resname="Mentions légales et Politique de confidentialité">
+        <source>Mentions légales et Politique de confidentialité</source>
+        <target>Legal Notice and Privacy Policy</target>
+      </trans-unit>
+      <trans-unit id="7qopVuf" resname="Tous droits réservés Jess-Relocation">
+        <source>Tous droits réservés Jess-Relocation</source>
+        <target>All rights reserved Jess-Relocation</target>
+      </trans-unit>
+      <trans-unit id="1OnRRph" resname="ACCUEIL">
+        <source>ACCUEIL</source>
+        <target>HOME</target>
+      </trans-unit>
+      <trans-unit id="uW_EYuz" resname="À PROPOS">
+        <source>À PROPOS</source>
+        <target>ABOUT</target>
+      </trans-unit>
+      <trans-unit id="YPMB1b6" resname="PRESTATIONS DE SERVICES">
+        <source>PRESTATIONS DE SERVICES</source>
+        <target>SERVICES</target>
+      </trans-unit>
+      <trans-unit id="hCDU0TZ" resname="POUR PARTICULIER">
+        <source>POUR PARTICULIER</source>
+        <target>FOR INDIVIDUAL</target>
+      </trans-unit>
+      <trans-unit id="p77kCbq" resname="POUR ENTREPRISE">
+        <source>POUR ENTREPRISE</source>
+        <target>FOR BUSINESS</target>
+      </trans-unit>
+      <trans-unit id="u8y_qGB" resname="PRENDRE RENDEZ-VOUS">
+        <source>PRENDRE RENDEZ-VOUS</source>
+        <target>MAKE AN APPOINTMENT</target>
+      </trans-unit>
+      <trans-unit id="_C7LteU" resname="CONTACT">
+        <source>CONTACT</source>
+        <target>CONTACT</target>
+      </trans-unit>
+      <trans-unit id="u9vL9zR" resname="ADMINISTRATION">
+        <source>ADMINISTRATION</source>
+        <target>ADMINISTRATION</target>
+      </trans-unit>
+      <trans-unit id="_x.Tqxf" resname="Besoin d’un logement">
+        <source>Besoin d’un logement</source>
+        <target>Need accommodation</target>
+      </trans-unit>
+      <trans-unit id="dGBVeXQ" resname="dans la métropole lyonnaise?">
+        <source>dans la métropole lyonnaise?</source>
+        <target>in the Lyon metropolitan area?</target>
+      </trans-unit>
+      <trans-unit id="yuLQbuB" resname="Ne cherchez plus votre bien à la location, je m’occupe de tout.&#10;                        Grâce à ma connaissance du secteur et du marché ultra-tendu de la location à Lyon,&#10;                        je vous accompagne dans votre recherche d’appartement de l’établissement de votre cahier des charges&#10;                        à votre entrée dans les lieux.">
+        <source>Ne cherchez plus votre bien à la location, je m’occupe de tout.
+                        Grâce à ma connaissance du secteur et du marché ultra-tendu de la location à Lyon,
+                        je vous accompagne dans votre recherche d’appartement de l’établissement de votre cahier des charges
+                        à votre entrée dans les lieux.</source>
+        <target>Don’t search for rental properties anymore; I handle everything. With my knowledge of the area and the highly competitive rental market in Lyon, I assist you in your apartment search, from drafting your specifications to your move-in.</target>
+      </trans-unit>
+      <trans-unit id="V3ZmD6Y" resname="Pour">
+        <source>Pour</source>
+        <target>For</target>
+      </trans-unit>
+      <trans-unit id="cJ_eWiK" resname="PARTICULIER">
+        <source>PARTICULIER</source>
+        <target>INDIVIDUAL</target>
+      </trans-unit>
+      <trans-unit id="FeAA9PN" resname="ou pour">
+        <source>ou pour</source>
+        <target>or for</target>
+      </trans-unit>
+      <trans-unit id="JGsHQ4v" resname="ENTREPRISE">
+        <source>ENTREPRISE</source>
+        <target>BUSINESS</target>
+      </trans-unit>
+      <trans-unit id="vFztBc6" resname="Contactez-moi par téléphone">
+        <source>Contactez-moi par téléphone</source>
+        <target>Contact me by phone</target>
+      </trans-unit>
+      <trans-unit id="oMTXEXG" resname="Contactez-moi par email">
+        <source>Contactez-moi par email</source>
+        <target>Contact me by e-mail</target>
+      </trans-unit>
+      <trans-unit id="form.name" resname="Nom et Prénom">
+        <source>Nom et Prénom</source>
+        <target>First and last name</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_day" resname="Jour du rendez-vous">
+        <source>Jour du rendez-vous</source>
+        <target>Appointment Day</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour" resname="Heure">
+        <source>Heure</source>
+        <target>Hour</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_13" resname="13h">
+        <source>13h</source>
+        <target>1:00 PM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_14" resname="14h">
+        <source>14h</source>
+        <target>2:00 PM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_15" resname="15h">
+        <source>15h</source>
+        <target>3:00 PM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_16" resname="16h">
+        <source>16h</source>
+        <target>4:00 PM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_phone" resname="Numéro de téléphone (avec indicatif si hors France)">
+        <source>Numéro de téléphone (avec indicatif si hors France)</source>
+        <target>Phone number (with country code if outside France)</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_reason" resname="Motif du rendez-vous">
+        <source>Motif du rendez-vous</source>
+        <target>Reason for the appointment</target>
+      </trans-unit>
+      <trans-unit id="form.email" resname="Email">
+        <source>Email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="form.sujet" resname="Sujet">
+        <source>Sujet</source>
+        <target>Subject</target>
+      </trans-unit>
+      <trans-unit id="form.message" resname="Message">
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="form.picture" resname="Vous pouvez joindre une photo de profil (jpg, jpeg, png)">
+        <source>Vous pouvez joindre une photo de profil (jpg, jpeg, png)</source>
+        <target>You can upload a profile picture (jpg, jpeg, png)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

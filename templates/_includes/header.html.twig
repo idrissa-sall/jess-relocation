@@ -42,11 +42,13 @@
                 {% endif %}
                 <li class="header-v-separator"></li>
                 {% for locale in locales %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{path('app_change_locale', {'lang': locale})}}">
-                            <img src="{{asset('assets/icones/'~locale~'.png')}}" alt="{{locale}}" class="langue-icone">
-                        </a>
-                    </li>
+                    {% if locale != app.request.locale %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{path('app_change_locale', {'lang': locale})}}">
+                                <img src="{{asset('assets/icones/'~locale~'.png')}}" alt="{{locale}}" class="langue-icone">
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
