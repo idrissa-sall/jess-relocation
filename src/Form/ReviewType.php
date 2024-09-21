@@ -42,8 +42,8 @@ class ReviewType extends AbstractType
                     new Length([
                         'min'           => 3,
                         'minMessage'    => "Minimum 3 caractères",
-                        'max'           => 125,
-                        'maxMessage'    => 'Maximum 125 caractères'
+                        'max'           => 300,
+                        'maxMessage'    => 'Maximum 300 caractères'
                     ]),
                     new NotBlank([
                         'message' => 'Ce champ ne peut pas être vide.',

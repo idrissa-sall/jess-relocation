@@ -565,6 +565,22 @@
         <source>Heure</source>
         <target>Hour</target>
       </trans-unit>
+      <trans-unit id="form.appointment_hour_9" resname="9h">
+        <source>9h</source>
+        <target>9:00 AM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_10" resname="10h">
+        <source>10h</source>
+        <target>10:00 AM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_11" resname="11h">
+        <source>11h</source>
+        <target>11:00 AM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_12" resname="12h">
+        <source>12h</source>
+        <target>12:00 PM</target>
+      </trans-unit>
       <trans-unit id="form.appointment_hour_13" resname="13h">
         <source>13h</source>
         <target>1:00 PM</target>
@@ -580,6 +596,10 @@
       <trans-unit id="form.appointment_hour_16" resname="16h">
         <source>16h</source>
         <target>4:00 PM</target>
+      </trans-unit>
+      <trans-unit id="form.appointment_hour_17" resname="17h">
+        <source>17h</source>
+        <target>5:00 PM</target>
       </trans-unit>
       <trans-unit id="form.appointment_phone" resname="Numéro de téléphone (avec indicatif si hors France)">
         <source>Numéro de téléphone (avec indicatif si hors France)</source>

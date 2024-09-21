@@ -51,10 +51,15 @@ class AppointmentType extends AbstractType
                     'class'     => 'form-select'
                 ],
                 'choices'   => [
+                    '9h' => '9',
+                    '10h' => '10',
+                    '11h' => '11',
+                    '12h' => '12',
                     '13h' => '13',
                     '14h' => '14',
                     '15h' => '15',
                     '16h' => '16',
+                    '17h' => '17',
                 ]
             ])
             ->add('phone', TelType::class, [

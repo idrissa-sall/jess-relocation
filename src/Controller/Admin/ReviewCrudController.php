@@ -68,6 +68,7 @@ class ReviewCrudController extends AbstractCrudController
         {
             $fields = [
                 BooleanField::new('isValid', 'Statut'),
+                TextareaField::new('message', 'Message')
             ];
         }
 
